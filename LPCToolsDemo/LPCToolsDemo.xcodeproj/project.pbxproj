@@ -7,16 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2702BAA67A8803F02904B165 /* libPods-LPCToolsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70995FBD4023B6A6E8FDE5 /* libPods-LPCToolsDemo.a */; };
+		DB6147C51F725FA40045D5A5 /* LPCImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB6147A81F725FA40045D5A5 /* LPCImages.bundle */; };
+		DB6147C61F725FA40045D5A5 /* LPCBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6147AB1F725FA40045D5A5 /* LPCBaseManager.m */; };
+		DB6147C71F725FA40045D5A5 /* LPCNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6147AD1F725FA40045D5A5 /* LPCNotificationManager.m */; };
+		DB6147C81F725FA40045D5A5 /* LPCCommentApp.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6147B01F725FA40045D5A5 /* LPCCommentApp.m */; };
+		DB6147C91F725FA40045D5A5 /* LPCHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6147B21F725FA40045D5A5 /* LPCHTTPSessionManager.m */; };
+		DB6147CA1F725FA40045D5A5 /* LPCMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6147B41F725FA40045D5A5 /* LPCMBProgressHUD.m */; };
+		DB6147CB1F725FA40045D5A5 /* LPCShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6147B61F725FA40045D5A5 /* LPCShareView.m */; };
+		DB6147CC1F725FA40045D5A5 /* LPCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6147B81F725FA40045D5A5 /* LPCTools.m */; };
+		DB6147CD1F725FA40045D5A5 /* LPCAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6147BB1F725FA40045D5A5 /* LPCAlertController.m */; };
+		DB6147CE1F725FA40045D5A5 /* LPCBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6147BD1F725FA40045D5A5 /* LPCBaseModel.m */; };
+		DB6147CF1F725FA40045D5A5 /* LPCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6147BF1F725FA40045D5A5 /* LPCTableView.m */; };
+		DB6147D01F725FA40045D5A5 /* LPCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6147C11F725FA40045D5A5 /* LPCTableViewCell.m */; };
+		DB6147D11F725FA40045D5A5 /* LPCUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6147C41F725FA40045D5A5 /* LPCUIView.m */; };
 		DBC6E1481F4301C700A4E200 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6E1471F4301C700A4E200 /* main.m */; };
 		DBC6E14B1F4301C700A4E200 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6E14A1F4301C700A4E200 /* AppDelegate.m */; };
 		DBC6E14E1F4301C700A4E200 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6E14D1F4301C700A4E200 /* ViewController.m */; };
 		DBC6E1511F4301C700A4E200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC6E14F1F4301C700A4E200 /* Main.storyboard */; };
 		DBC6E1531F4301C700A4E200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC6E1521F4301C700A4E200 /* Assets.xcassets */; };
 		DBC6E1561F4301C700A4E200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC6E1541F4301C700A4E200 /* LaunchScreen.storyboard */; };
-		DBC6E1601F4301D000A4E200 /* LPCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6E15F1F4301D000A4E200 /* LPCTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		798803811E9C9BF34F1B051D /* Pods-LPCToolsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPCToolsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPCToolsDemo/Pods-LPCToolsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BE70995FBD4023B6A6E8FDE5 /* libPods-LPCToolsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LPCToolsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C49EFD0FEF477132F38427CE /* Pods-LPCToolsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPCToolsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPCToolsDemo/Pods-LPCToolsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DB6147991F725FA40045D5A5 /* LPCColorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCColorDefine.h; sourceTree = "<group>"; };
+		DB61479A1F725FA40045D5A5 /* LPCDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCDefine.h; sourceTree = "<group>"; };
+		DB61479B1F725FA40045D5A5 /* LPCEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCEnum.h; sourceTree = "<group>"; };
+		DB61479C1F725FA40045D5A5 /* LPCFontDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCFontDefine.h; sourceTree = "<group>"; };
+		DB61479D1F725FA40045D5A5 /* LPCFrameDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCFrameDefine.h; sourceTree = "<group>"; };
+		DB61479E1F725FA40045D5A5 /* LPCFunctionDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCFunctionDefine.h; sourceTree = "<group>"; };
+		DB61479F1F725FA40045D5A5 /* LPCKeyDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCKeyDefine.h; sourceTree = "<group>"; };
+		DB6147A01F725FA40045D5A5 /* LPCLanguageDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCLanguageDefine.h; sourceTree = "<group>"; };
+		DB6147A11F725FA40045D5A5 /* LPCOtherDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCOtherDefine.h; sourceTree = "<group>"; };
+		DB6147A21F725FA40045D5A5 /* LPCPathDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCPathDefine.h; sourceTree = "<group>"; };
+		DB6147A31F725FA40045D5A5 /* LPCStringDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCStringDefine.h; sourceTree = "<group>"; };
+		DB6147A41F725FA40045D5A5 /* LPCSystemDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCSystemDefine.h; sourceTree = "<group>"; };
+		DB6147A51F725FA40045D5A5 /* LPCURLDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCURLDefine.h; sourceTree = "<group>"; };
+		DB6147A61F725FA40045D5A5 /* LPCVersionDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCVersionDefine.h; sourceTree = "<group>"; };
+		DB6147A71F725FA40045D5A5 /* LPCViewDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCViewDefine.h; sourceTree = "<group>"; };
+		DB6147A81F725FA40045D5A5 /* LPCImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LPCImages.bundle; sourceTree = "<group>"; };
+		DB6147AA1F725FA40045D5A5 /* LPCBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCBaseManager.h; sourceTree = "<group>"; };
+		DB6147AB1F725FA40045D5A5 /* LPCBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCBaseManager.m; sourceTree = "<group>"; };
+		DB6147AC1F725FA40045D5A5 /* LPCNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCNotificationManager.h; sourceTree = "<group>"; };
+		DB6147AD1F725FA40045D5A5 /* LPCNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCNotificationManager.m; sourceTree = "<group>"; };
+		DB6147AF1F725FA40045D5A5 /* LPCCommentApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCCommentApp.h; sourceTree = "<group>"; };
+		DB6147B01F725FA40045D5A5 /* LPCCommentApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCCommentApp.m; sourceTree = "<group>"; };
+		DB6147B11F725FA40045D5A5 /* LPCHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCHTTPSessionManager.h; sourceTree = "<group>"; };
+		DB6147B21F725FA40045D5A5 /* LPCHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCHTTPSessionManager.m; sourceTree = "<group>"; };
+		DB6147B31F725FA40045D5A5 /* LPCMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCMBProgressHUD.h; sourceTree = "<group>"; };
+		DB6147B41F725FA40045D5A5 /* LPCMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCMBProgressHUD.m; sourceTree = "<group>"; };
+		DB6147B51F725FA40045D5A5 /* LPCShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCShareView.h; sourceTree = "<group>"; };
+		DB6147B61F725FA40045D5A5 /* LPCShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCShareView.m; sourceTree = "<group>"; };
+		DB6147B71F725FA40045D5A5 /* LPCTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCTools.h; sourceTree = "<group>"; };
+		DB6147B81F725FA40045D5A5 /* LPCTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCTools.m; sourceTree = "<group>"; };
+		DB6147BA1F725FA40045D5A5 /* LPCAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCAlertController.h; sourceTree = "<group>"; };
+		DB6147BB1F725FA40045D5A5 /* LPCAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCAlertController.m; sourceTree = "<group>"; };
+		DB6147BC1F725FA40045D5A5 /* LPCBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCBaseModel.h; sourceTree = "<group>"; };
+		DB6147BD1F725FA40045D5A5 /* LPCBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCBaseModel.m; sourceTree = "<group>"; };
+		DB6147BE1F725FA40045D5A5 /* LPCTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCTableView.h; sourceTree = "<group>"; };
+		DB6147BF1F725FA40045D5A5 /* LPCTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCTableView.m; sourceTree = "<group>"; };
+		DB6147C01F725FA40045D5A5 /* LPCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCTableViewCell.h; sourceTree = "<group>"; };
+		DB6147C11F725FA40045D5A5 /* LPCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCTableViewCell.m; sourceTree = "<group>"; };
+		DB6147C21F725FA40045D5A5 /* LPCUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCUIKit.h; sourceTree = "<group>"; };
+		DB6147C31F725FA40045D5A5 /* LPCUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCUIView.h; sourceTree = "<group>"; };
+		DB6147C41F725FA40045D5A5 /* LPCUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCUIView.m; sourceTree = "<group>"; };
 		DBC6E1431F4301C700A4E200 /* LPCToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPCToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC6E1471F4301C700A4E200 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DBC6E1491F4301C700A4E200 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -27,8 +84,6 @@
 		DBC6E1521F4301C700A4E200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBC6E1551F4301C700A4E200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBC6E1571F4301C700A4E200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBC6E15E1F4301D000A4E200 /* LPCTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCTools.h; sourceTree = "<group>"; };
-		DBC6E15F1F4301D000A4E200 /* LPCTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,18 +91,118 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2702BAA67A8803F02904B165 /* libPods-LPCToolsDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D48EAC2E785D39DBF58F24C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE70995FBD4023B6A6E8FDE5 /* libPods-LPCToolsDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E3075719341E9992183C9AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				798803811E9C9BF34F1B051D /* Pods-LPCToolsDemo.debug.xcconfig */,
+				C49EFD0FEF477132F38427CE /* Pods-LPCToolsDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB6147971F725FA40045D5A5 /* LPCGodlike */ = {
+			isa = PBXGroup;
+			children = (
+				DB6147981F725FA40045D5A5 /* LPCDefine */,
+				DB6147A81F725FA40045D5A5 /* LPCImages.bundle */,
+				DB6147A91F725FA40045D5A5 /* LPCManager */,
+				DB6147AE1F725FA40045D5A5 /* LPCSDK */,
+				DB6147B71F725FA40045D5A5 /* LPCTools.h */,
+				DB6147B81F725FA40045D5A5 /* LPCTools.m */,
+				DB6147B91F725FA40045D5A5 /* LPCUIKit */,
+			);
+			path = LPCGodlike;
+			sourceTree = "<group>";
+		};
+		DB6147981F725FA40045D5A5 /* LPCDefine */ = {
+			isa = PBXGroup;
+			children = (
+				DB6147991F725FA40045D5A5 /* LPCColorDefine.h */,
+				DB61479A1F725FA40045D5A5 /* LPCDefine.h */,
+				DB61479B1F725FA40045D5A5 /* LPCEnum.h */,
+				DB61479C1F725FA40045D5A5 /* LPCFontDefine.h */,
+				DB61479D1F725FA40045D5A5 /* LPCFrameDefine.h */,
+				DB61479E1F725FA40045D5A5 /* LPCFunctionDefine.h */,
+				DB61479F1F725FA40045D5A5 /* LPCKeyDefine.h */,
+				DB6147A01F725FA40045D5A5 /* LPCLanguageDefine.h */,
+				DB6147A11F725FA40045D5A5 /* LPCOtherDefine.h */,
+				DB6147A21F725FA40045D5A5 /* LPCPathDefine.h */,
+				DB6147A31F725FA40045D5A5 /* LPCStringDefine.h */,
+				DB6147A41F725FA40045D5A5 /* LPCSystemDefine.h */,
+				DB6147A51F725FA40045D5A5 /* LPCURLDefine.h */,
+				DB6147A61F725FA40045D5A5 /* LPCVersionDefine.h */,
+				DB6147A71F725FA40045D5A5 /* LPCViewDefine.h */,
+			);
+			path = LPCDefine;
+			sourceTree = "<group>";
+		};
+		DB6147A91F725FA40045D5A5 /* LPCManager */ = {
+			isa = PBXGroup;
+			children = (
+				DB6147AA1F725FA40045D5A5 /* LPCBaseManager.h */,
+				DB6147AB1F725FA40045D5A5 /* LPCBaseManager.m */,
+				DB6147AC1F725FA40045D5A5 /* LPCNotificationManager.h */,
+				DB6147AD1F725FA40045D5A5 /* LPCNotificationManager.m */,
+			);
+			path = LPCManager;
+			sourceTree = "<group>";
+		};
+		DB6147AE1F725FA40045D5A5 /* LPCSDK */ = {
+			isa = PBXGroup;
+			children = (
+				DB6147AF1F725FA40045D5A5 /* LPCCommentApp.h */,
+				DB6147B01F725FA40045D5A5 /* LPCCommentApp.m */,
+				DB6147B11F725FA40045D5A5 /* LPCHTTPSessionManager.h */,
+				DB6147B21F725FA40045D5A5 /* LPCHTTPSessionManager.m */,
+				DB6147B31F725FA40045D5A5 /* LPCMBProgressHUD.h */,
+				DB6147B41F725FA40045D5A5 /* LPCMBProgressHUD.m */,
+				DB6147B51F725FA40045D5A5 /* LPCShareView.h */,
+				DB6147B61F725FA40045D5A5 /* LPCShareView.m */,
+			);
+			path = LPCSDK;
+			sourceTree = "<group>";
+		};
+		DB6147B91F725FA40045D5A5 /* LPCUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DB6147BA1F725FA40045D5A5 /* LPCAlertController.h */,
+				DB6147BB1F725FA40045D5A5 /* LPCAlertController.m */,
+				DB6147BC1F725FA40045D5A5 /* LPCBaseModel.h */,
+				DB6147BD1F725FA40045D5A5 /* LPCBaseModel.m */,
+				DB6147BE1F725FA40045D5A5 /* LPCTableView.h */,
+				DB6147BF1F725FA40045D5A5 /* LPCTableView.m */,
+				DB6147C01F725FA40045D5A5 /* LPCTableViewCell.h */,
+				DB6147C11F725FA40045D5A5 /* LPCTableViewCell.m */,
+				DB6147C21F725FA40045D5A5 /* LPCUIKit.h */,
+				DB6147C31F725FA40045D5A5 /* LPCUIView.h */,
+				DB6147C41F725FA40045D5A5 /* LPCUIView.m */,
+			);
+			path = LPCUIKit;
+			sourceTree = "<group>";
+		};
 		DBC6E13A1F4301C700A4E200 = {
 			isa = PBXGroup;
 			children = (
-				DBC6E15D1F4301D000A4E200 /* LPCGodlike */,
+				DB6147971F725FA40045D5A5 /* LPCGodlike */,
 				DBC6E1451F4301C700A4E200 /* LPCToolsDemo */,
 				DBC6E1441F4301C700A4E200 /* Products */,
+				5E3075719341E9992183C9AE /* Pods */,
+				4D48EAC2E785D39DBF58F24C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,15 +238,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DBC6E15D1F4301D000A4E200 /* LPCGodlike */ = {
-			isa = PBXGroup;
-			children = (
-				DBC6E15E1F4301D000A4E200 /* LPCTools.h */,
-				DBC6E15F1F4301D000A4E200 /* LPCTools.m */,
-			);
-			path = LPCGodlike;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBC6E15A1F4301C700A4E200 /* Build configuration list for PBXNativeTarget "LPCToolsDemo" */;
 			buildPhases = (
+				689E9D58EFD920B92761299F /* [CP] Check Pods Manifest.lock */,
 				DBC6E13F1F4301C700A4E200 /* Sources */,
 				DBC6E1401F4301C700A4E200 /* Frameworks */,
 				DBC6E1411F4301C700A4E200 /* Resources */,
+				42E28A1E5E5619722E095B21 /* [CP] Embed Pods Frameworks */,
+				7166037E9CC29527D3F36362 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBC6E1561F4301C700A4E200 /* LaunchScreen.storyboard in Resources */,
+				DB6147C51F725FA40045D5A5 /* LPCImages.bundle in Resources */,
 				DBC6E1531F4301C700A4E200 /* Assets.xcassets in Resources */,
 				DBC6E1511F4301C700A4E200 /* Main.storyboard in Resources */,
 			);
@@ -159,15 +309,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42E28A1E5E5619722E095B21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPCToolsDemo/Pods-LPCToolsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		689E9D58EFD920B92761299F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LPCToolsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7166037E9CC29527D3F36362 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPCToolsDemo/Pods-LPCToolsDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBC6E13F1F4301C700A4E200 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6147C61F725FA40045D5A5 /* LPCBaseManager.m in Sources */,
+				DB6147CD1F725FA40045D5A5 /* LPCAlertController.m in Sources */,
+				DB6147CC1F725FA40045D5A5 /* LPCTools.m in Sources */,
+				DB6147CA1F725FA40045D5A5 /* LPCMBProgressHUD.m in Sources */,
+				DB6147CE1F725FA40045D5A5 /* LPCBaseModel.m in Sources */,
+				DB6147C91F725FA40045D5A5 /* LPCHTTPSessionManager.m in Sources */,
+				DB6147CB1F725FA40045D5A5 /* LPCShareView.m in Sources */,
+				DB6147D11F725FA40045D5A5 /* LPCUIView.m in Sources */,
 				DBC6E14E1F4301C700A4E200 /* ViewController.m in Sources */,
-				DBC6E1601F4301D000A4E200 /* LPCTools.m in Sources */,
 				DBC6E14B1F4301C700A4E200 /* AppDelegate.m in Sources */,
+				DB6147C81F725FA40045D5A5 /* LPCCommentApp.m in Sources */,
 				DBC6E1481F4301C700A4E200 /* main.m in Sources */,
+				DB6147CF1F725FA40045D5A5 /* LPCTableView.m in Sources */,
+				DB6147C71F725FA40045D5A5 /* LPCNotificationManager.m in Sources */,
+				DB6147D01F725FA40045D5A5 /* LPCTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +499,7 @@
 		};
 		DBC6E15B1F4301C700A4E200 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 798803811E9C9BF34F1B051D /* Pods-LPCToolsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K4QXW2WYQ3;
@@ -299,6 +512,7 @@
 		};
 		DBC6E15C1F4301C700A4E200 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C49EFD0FEF477132F38427CE /* Pods-LPCToolsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K4QXW2WYQ3;
@@ -328,6 +542,7 @@
 				DBC6E15C1F4301C700A4E200 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

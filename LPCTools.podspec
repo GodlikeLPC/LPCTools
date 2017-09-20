@@ -20,7 +20,7 @@ s.authors      = {'Godlike' => 'godlikelpc@126.com'}
 s.platform     = :ios, '8.0'
 s.source       = {:git => 'https://github.com/lipeichi/LPCTools.git', :tag => s.version}
 s.source_files = 'LPCGodlike/**/*.{h,m}','LPCGodlike/*.{h,m}'
-s.dependency "SDWebImage"
+s.dependency "MBProgressHUD","AFNetworking"
 s.requires_arc = true
 
 end
