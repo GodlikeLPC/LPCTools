@@ -660,7 +660,7 @@
 				DEVELOPMENT_TEAM = QB7XENBN2X;
 				INFOPLIST_FILE = LPCToolsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.LPCTools.LPCToolsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.LPCTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -676,7 +676,7 @@
 				DEVELOPMENT_TEAM = QB7XENBN2X;
 				INFOPLIST_FILE = LPCToolsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.LPCTools.LPCToolsDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.godlike.LPCTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
