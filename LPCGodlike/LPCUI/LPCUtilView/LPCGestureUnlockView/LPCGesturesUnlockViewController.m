@@ -9,10 +9,11 @@
 #import "LPCGesturesUnlockViewController.h"
 #import "LPCGesturesUnlockView.h"
 #import "LPCGesturesUnlockIndicator.h"
+#import "LPCAlertController.h"
 
 #define GesturesPassword @"LPCKey_GesturesPassword"
 
-@interface LPCGesturesUnlockViewController ()<LPCGesturesUnlockViewDelegate,UIAlertViewDelegate>
+@interface LPCGesturesUnlockViewController ()<LPCGesturesUnlockViewDelegate>
 
 @property (weak, nonatomic) IBOutlet LPCGesturesUnlockView *gesturesUnlockView;
 @property (weak, nonatomic) IBOutlet LPCGesturesUnlockIndicator *gesturesUnlockIndicator;
@@ -144,13 +145,19 @@
     }else {
         
         if (errorCount - 1 == 0) {//你已经输错五次了！ 退出登陆！
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"手势密码已失效" message:@"请重新登陆" delegate:self cancelButtonTitle:nil otherButtonTitles:@"重新登陆", nil];
-            [alertView show];
+            
+            LPCAlertController *alertController = [LPCAlertController alertControllerWithTitle:@"手势密码已失效" message:@"请重新登陆" preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"重新登陆" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+                NSLog(@"重新登录");
+            }];
+            [alertController addAction:cancelAction];
+            [self presentViewController:alertController animated:YES completion:nil];
+            
             errorCount = 5;
             return;
         }
         
-        self.statusLabel.text = [NSString stringWithFormat:@"密码错误，还可以再输入%ld次",--errorCount];
+        self.statusLabel.text = [NSString stringWithFormat:@"密码错误，还可以再输入%@次",@(--errorCount)];
         [self shakeAnimationForView:self.statusLabel];
     }
 }
@@ -222,13 +229,6 @@
             break;
     }
 }
-
-#pragma mark - UIAlertViewDelegate
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    //重新登陆
-    NSLog(@"重新登陆");
-}
-
 
 
 @end

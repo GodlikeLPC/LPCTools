@@ -7,15 +7,14 @@
 //
 
 #import "LPCCommentApp.h"
-#import <UIKit/UIKit.h>
+#import "LPCAlertController.h"
 
-@interface LPCCommentApp ()<
-UIAlertViewDelegate>
+@interface LPCCommentApp ()
 
 //好评回调
-@property (nonatomic,copy) void(^commentAppBlock)();
+@property (nonatomic,copy) void(^commentAppBlock)(void);
 //吐槽回调
-@property (nonatomic,copy) void(^feedbackBlock)();
+@property (nonatomic,copy) void(^feedbackBlock)(void);
 
 @end
 
@@ -26,8 +25,8 @@ singleton_implementation(LPCCommentApp);
 //配置评论规则
 + (void)configCommentLogicWithTitle:(NSString *)title
                             message:(NSString *)message
-                    commentAppBlock:(void (^)())commentAppBlock
-                      feedbackBlock:(void (^)())feedbackBlock
+                    commentAppBlock:(void (^)(void))commentAppBlock
+                      feedbackBlock:(void (^)(void))feedbackBlock
 {
     [LPCCommentApp sharedLPCCommentApp].commentAppBlock = commentAppBlock;
     [LPCCommentApp sharedLPCCommentApp].feedbackBlock = feedbackBlock;
@@ -75,13 +74,24 @@ singleton_implementation(LPCCommentApp);
 //展示评价view
 - (void)showCommentView:(NSString *)title message:(NSString *)message
 {
-    UIAlertView *alertViewTest = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:@"再用用看" otherButtonTitles:@"赞，给个好评",@"吐槽一下", nil];
-    [alertViewTest show];
+    LPCAlertController *alertController = [LPCAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"再用用看" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        [self clickActionIndex:0];
+    }];
+    [alertController addAction:cancelAction];
+    UIAlertAction *goodAction = [UIAlertAction actionWithTitle:@"赞，给个好评" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self clickActionIndex:1];
+    }];
+    [alertController addAction:goodAction];
+    UIAlertAction *feedbackAction = [UIAlertAction actionWithTitle:@"吐槽一下" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self clickActionIndex:2];
+    }];
+    [alertController addAction:feedbackAction];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+- (void)clickActionIndex:(NSInteger)buttonIndex
 {
-    NSLog(@"%li",buttonIndex);
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     //当前时间戳的天数
     NSTimeInterval interval = [[NSDate date] timeIntervalSince1970];
@@ -105,20 +115,20 @@ singleton_implementation(LPCCommentApp);
     switch (buttonIndex) {
         case 1: //好评
             [userDefaults setObject:@"1" forKey:@"userOptChoose"];
-            [userDefaults setObject:[NSString stringWithFormat:@"%ld",theDays] forKey:@"theDays"];
+            [userDefaults setObject:[NSString stringWithFormat:@"%@",@(theDays)] forKey:@"theDays"];
             [LPCCommentApp sharedLPCCommentApp].commentAppBlock();
             break;
         case 2: //吐槽
             [userDefaults setObject:@"2" forKey:@"userOptChoose"];
-            [userDefaults setObject:[NSString stringWithFormat:@"%ld",theDays] forKey:@"theDays"];
+            [userDefaults setObject:[NSString stringWithFormat:@"%@",@(theDays)] forKey:@"theDays"];
             [LPCCommentApp sharedLPCCommentApp].feedbackBlock();
             break;
         case 0: //拒绝
             if (udUserChoose<=3 || theDays-[[userDefaults objectForKey:@"theDays"] intValue]>30) {
                 [userDefaults setObject:@"3" forKey:@"userOptChoose"];
-                [userDefaults setObject:[NSString stringWithFormat:@"%ld",theDays] forKey:@"theDays"];
+                [userDefaults setObject:[NSString stringWithFormat:@"%@",@(theDays)] forKey:@"theDays"];
             }else{
-                [userDefaults setObject:[NSString stringWithFormat:@"%ld",theDays-udtheDays+3] forKey:@"userOptChoose"];
+                [userDefaults setObject:[NSString stringWithFormat:@"%@",@(theDays-udtheDays+3)] forKey:@"userOptChoose"];
             }
             break;
         default:

@@ -15,7 +15,7 @@ singleton_interface(LPCCommentApp);
 //配置评论规则
 + (void)configCommentLogicWithTitle:(NSString *)title
                             message:(NSString *)message
-                    commentAppBlock:(void (^)())commentAppBlock
-                      feedbackBlock:(void (^)())feedbackBlock;
+                    commentAppBlock:(void (^)(void))commentAppBlock
+                      feedbackBlock:(void (^)(void))feedbackBlock;
 
 @end

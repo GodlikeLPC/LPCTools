@@ -51,12 +51,5 @@
     return nil;
 }
 
-- (void)delegateAction:(id)sender
-{
-    if ([self.delegate respondsToSelector:@selector(viewActionWithSender:withView:withObject:)])
-    {
-        [self.delegate viewActionWithSender:sender withView:self withObject:self.obj];
-    }
-}
 
 @end

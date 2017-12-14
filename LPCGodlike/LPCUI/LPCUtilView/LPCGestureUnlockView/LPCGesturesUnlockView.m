@@ -130,7 +130,7 @@
         //保存输入密码
         NSMutableString *gesturePwd = @"".mutableCopy;
         for (UIButton *button in self.selectedBtns) {
-            [gesturePwd appendFormat:@"%ld",button.tag-1000];
+            [gesturePwd appendFormat:@"%@",@(button.tag-1000)];
             button.selected = NO;
         }
         [self.selectedBtns removeAllObjects];
