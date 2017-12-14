@@ -1,6 +1,6 @@
 //
 //  LPCTools.m
-//  EverydayNews
+//  LPCTools
 //
 //  Created by 李沛池 on 2017/7/20.
 //  Copyright © 2017年 Godlike. All rights reserved.
@@ -8,6 +8,8 @@
 
 #import "LPCTools.h"
 #import <objc/runtime.h>
+#import "Reachability.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface LPCTools ()
 
@@ -15,6 +17,128 @@
 
 @implementation LPCTools
 
+
+//只有一个取消按钮的提示框
++ (void)showAlertWithVC:(UIViewController *)vc title:(NSString *)title message:(NSString *)message cancelText:(NSString *)cancelText
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelText style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+        
+    }];
+    
+    [alertController addAction:cancelAction];
+    
+    [vc presentViewController:alertController animated:YES completion:nil];
+}
+
+//网络连接状态
++ (BOOL)networkStatus
+{
+    Reachability *hostReach = [Reachability reachabilityWithHostName:@"www.baidu.com"];
+    switch ([hostReach currentReachabilityStatus]) {
+        case NotReachable:
+            // 没有网络连接
+            return NO;
+            break;
+        case ReachableViaWWAN:
+            // 使用3G网络
+            break;
+        case ReachableViaWiFi:
+            // 使用WiFi网络
+            break;
+    }
+    return YES;
+}
+
+/** 打开手电筒 */
++ (void)openFlashlight
+{
+    AVCaptureDevice *captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    NSError *error = nil;
+    if ([captureDevice hasTorch]) {
+        BOOL locked = [captureDevice lockForConfiguration:&error];
+        if (locked) {
+            captureDevice.torchMode = AVCaptureTorchModeOn;
+            [captureDevice unlockForConfiguration];
+        }
+    }
+}
+/** 关闭手电筒 */
++ (void)closeFlashlight
+{
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if ([device hasTorch]) {
+        [device lockForConfiguration:nil];
+        [device setTorchMode: AVCaptureTorchModeOff];
+        [device unlockForConfiguration];
+    }
+}
+
+//保存下载的文件（根据格式 array或dic）
++ (BOOL)saveFileWithFileName:(NSString *)fileName data:(id)data
+{
+    NSFileManager *fm = [NSFileManager defaultManager];
+    //如果路径文件夹不存在 创建路径文件夹
+    if(![fm fileExistsAtPath:PATH_DownloadPath]){
+        [fm createDirectoryAtPath:PATH_DownloadPath withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    //文件存放路径
+    NSString *filePath = [PATH_DownloadPath stringByAppendingPathComponent:fileName];
+    //如果文件已存在则覆盖
+    if ([fm fileExistsAtPath:filePath]) {
+        [fm removeItemAtPath:filePath error:nil];
+    }
+    //写入文件
+    return [data writeToFile:filePath atomically:YES];
+}
+
+//根据文件名查询文件
++ (NSString *)getFileDataWithFileName:(NSString *)fileName
+{
+    NSString *filePath = [PATH_DownloadPath stringByAppendingPathComponent:fileName];
+    NSFileManager *fm = [NSFileManager defaultManager];
+    //如果文件不存在 返回Nil
+    if(![fm fileExistsAtPath:filePath]) return nil;
+    return [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+}
+
+//转换成JSON串字符串（没有可读性）
++ (NSString *)objectToJSONString:(id)object
+{
+    //e.g. : [{"key":"value"},{"key":"value"}]
+    NSData *data = [NSJSONSerialization dataWithJSONObject:object options:NSJSONReadingMutableLeaves | NSJSONReadingAllowFragments error:nil];
+    if (data == nil) return @"";
+    return  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+}
+
+//转换成JSON串字符串（有可读性）
++ (NSString *)objectToReadableJSONString:(id)object
+{
+    /*e.g. :
+     [
+     {
+     "key" : "value"
+     },
+     {
+     "key" : "value"
+     }
+     ]
+     */
+    NSData *data = [NSJSONSerialization dataWithJSONObject:object options:NSJSONWritingPrettyPrinted error:nil];
+    if (data == nil) return @"";
+    return  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+}
+
+//转换成JSON数据
++ (NSData *)objectToJSONData:(id)object
+{
+    //e.g. : <5b0a2020 7b0a2020 2020226b 65792220 3a202276 616c7565 220a2020 7d2c0a20 207b0a20 20202022 6b657922 203a2022 76616c75 65220a20 207d0a5d>
+    return [NSJSONSerialization dataWithJSONObject:object options:NSJSONWritingPrettyPrinted error:nil];
+}
+
+
+#pragma mark --------------- OLD
 
 #pragma mark - String
 //去掉空格
@@ -59,63 +183,12 @@
 {
     for (UIWindow* window in [UIApplication sharedApplication].windows) {
         for (UIView* view in window.subviews) {
-            BOOL alert = [view isKindOfClass:[UIAlertView class]];
+            BOOL alert = [view isKindOfClass:[UIAlertController class]];
             if (alert)
                 return YES;
         }
     }
     return NO;
-}
-
-
-#pragma mark - Notification
-//根据key获取本地推送
-+ (UILocalNotification*)getLocalPushWithKey:(NSString *)key
-{
-    NSArray *localArray = [[UIApplication sharedApplication] scheduledLocalNotifications];
-    //声明本地通知对象
-    UILocalNotification *localNotification;
-    if (localArray) {
-        for (UILocalNotification *noti in localArray) {
-            NSDictionary *dict = noti.userInfo;
-            if (dict) {
-                NSString *inKey = [dict objectForKey:key];
-                if (inKey) {
-                    localNotification=noti;
-                    if (localNotification) {
-                        //不推送 取消推送
-                        //[[UIApplication sharedApplication] cancelLocalNotification:localNotification];
-                        return localNotification;
-                    }
-                }
-            }
-        }
-    }
-    return nil;
-}
-
-//根据key移除本地推送
-+ (void)removeLocalPushWithKey:(NSString*)key
-{
-    NSArray *localArray = [[UIApplication sharedApplication] scheduledLocalNotifications];
-    //声明本地通知对象
-    UILocalNotification *localNotification;
-    if (localArray) {
-        for (UILocalNotification *noti in localArray) {
-            NSDictionary *dict = noti.userInfo;
-            if (dict) {
-                NSString *inKey = [dict objectForKey:key];
-                if (inKey) {
-                    localNotification=noti;
-                    if (localNotification) {
-                        //不推送 取消推送
-                        [[UIApplication sharedApplication] cancelLocalNotification:localNotification];
-                    }
-                    continue;
-                }
-            }
-        }
-    }
 }
 
 

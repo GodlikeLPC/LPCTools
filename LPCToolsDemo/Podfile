@@ -4,5 +4,6 @@ target ‘LPCToolsDemo’ do
 
     pod 'MBProgressHUD'
     pod 'AFNetworking'
+    pod 'Reachability'
 
 end

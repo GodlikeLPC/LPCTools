@@ -1,6 +1,6 @@
 //
 //  LPCFunctionDefine.h
-//  EverydayNews
+//  LPCTools
 //
 //  Created by 李沛池 on 2017/7/22.
 //  Copyright © 2017年 Godlike. All rights reserved.
@@ -36,6 +36,9 @@ return _instance; \
 
 
 #pragma mark - 更方便的使用强弱引用
+
+#define LPCCreateWeakSelf   __weak   __typeof(&*self)weakSelf = self;
+#define LPCCreateStrongSelf __strong __typeof(&*weakSelf)self = weakSelf;
 
 //弱引用
 #define weakify( x ) \
@@ -81,6 +84,11 @@ dispatch_once(&onceToken, block)
 
 #define GCD_DELAY(seconds,block) dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(seconds * NSEC_PER_SEC));\
 dispatch_after(popTime, dispatch_get_main_queue(), block);
+
+
+#pragma mark - CLASS
+#define CLASSFromNSString(className)   NSClassFromString(className)
+#define CLASSINITWithString(className) [[CLASSFromNSString(className) alloc] init]
 
 
 #pragma mark - Log

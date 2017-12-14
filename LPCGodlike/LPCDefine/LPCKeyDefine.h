@@ -1,6 +1,6 @@
 //
 //  LPCKeyDefine.h
-//  EverydayNews
+//  LPCTools
 //
 //  Created by 李沛池 on 2017/7/22.
 //  Copyright © 2017年 Godlike. All rights reserved.
@@ -11,6 +11,7 @@
 
 //APP渠道
 #define CHANNEL_APP    @"App Store"
+#define APP_Channel @"App Store"
 
 //友盟
 #define APPKEY_UMENG   @"5959f10f1061d24b3900087e"
@@ -41,6 +42,13 @@
 #define APPKEY_QQ         @"1106201347"
 #define APPSECRET_QQ      @"GAq8u9xHK7gNiOYI"
 #define REDIRECTURL_QQ    @"http://mobile.umeng.com/social"
+
+//腾讯统计、崩溃分析MTA
+#define APPID_MTA  @"3203272744"
+#define APPKEY_MTA  @"IG15J3V8TYKZ"
+
+//百度崩溃crab
+#define APPKEY_Crab @"3331c8275bbfba82"
 
 //替换符号
 #define SEPARATE_string  @"^_^"

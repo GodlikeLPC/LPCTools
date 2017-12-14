@@ -1,6 +1,6 @@
 //
 //  LPCColorDefine.h
-//  EverydayNews
+//  LPCTools
 //
 //  Created by 李沛池 on 2017/7/22.
 //  Copyright © 2017年 Godlike. All rights reserved.
@@ -14,6 +14,8 @@
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 //RGB颜色转换（16进制->10进制）
 #define COLOR_FFFFFF(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+//根据图片取颜色
+#define ColorImage(name)             [UIColor colorWithPatternImage:ImageWithContentsOfFileDefault(name)]
 
 //随机一个颜色
 #define ColorRandom [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];

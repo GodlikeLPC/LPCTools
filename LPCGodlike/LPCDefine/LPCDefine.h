@@ -1,6 +1,6 @@
 //
 //  LPCDefine.h
-//  EverydayNews
+//  LPCTools
 //
 //  Created by 李沛池 on 2017/7/22.
 //  Copyright © 2017年 Godlike. All rights reserved.
@@ -24,6 +24,8 @@
 #import "LPCViewDefine.h"
 //路径
 #import "LPCPathDefine.h"
+//主题
+#import "LPCThemeDefine.h"
 //颜色
 #import "LPCColorDefine.h"
 //frame

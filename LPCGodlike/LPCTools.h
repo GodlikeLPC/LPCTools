@@ -1,17 +1,39 @@
 //
 //  LPCTools.h
-//  EverydayNews
+//  LPCTools
 //
 //  Created by 李沛池 on 2017/7/20.
 //  Copyright © 2017年 Godlike. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
+#import "LPCObject.h"
 #import "LPCDefine.h"
 
-@interface LPCTools : NSObject
+@interface LPCTools : LPCObject
 
+//只有一个取消按钮的提示框
++ (void)showAlertWithVC:(UIViewController *)vc title:(NSString *)title message:(NSString *)message cancelText:(NSString *)cancelText;
+
+//网络连接状态
++ (BOOL)networkStatus;
+/** 打开手电筒 */
++ (void)openFlashlight;
+/** 关闭手电筒 */
++ (void)closeFlashlight;
+
+//保存下载的文件（根据格式 array或dic）
++ (BOOL)saveFileWithFileName:(NSString *)fileName data:(id)data;
+//根据文件名查询文件
++ (NSString *)getFileDataWithFileName:(NSString *)fileName;
+
+//转换成JSON串字符串（没有可读性）
++ (NSString *)objectToJSONString:(id)object;
+//转换成JSON串字符串（有可读性）
++ (NSString *)objectToReadableJSONString:(id)object;
+//转换成JSON数据
++ (NSData *)objectToJSONData:(id)object;
+
+#pragma mark ------- OLD
 
 #pragma mark - String
 //去掉空格
@@ -29,12 +51,6 @@
 - (void)openStatusNetWorkLoad:(BOOL)isLoad;
 //判断当前窗口是否含有alertView
 + (BOOL)alertViewExist;
-
-#pragma mark - Notification
-//根据key获取本地推送
-+ (UILocalNotification*)getLocalPushWithKey:(NSString *)key;
-//根据key移除本地推送
-+ (void)removeLocalPushWithKey:(NSString*)key;
 
 #pragma mark - Log
 //POST请求字典转为字符串格式
