@@ -6,6 +6,7 @@
 //  Copyright © 2017年 Godlike. All rights reserved.
 //
 
+//#import <LPCBaseView.h>
 #import "LPCBaseView.h"
 
 @interface LPCShareView : LPCBaseView
