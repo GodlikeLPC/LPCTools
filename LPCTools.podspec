@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'LPCTools'
-s.version      = '0.2.0'
+s.version      = '0.2.1'
 s.summary      = 'a component of Tools on iOS'
 s.homepage     = 'https://github.com/lipeichi/LPCTools'
 s.description  = <<-DESC
@@ -40,7 +40,7 @@ s.requires_arc = true
 
   s.subspec 'LPCBaseKit' do |ss|
     ss.dependency 'LPCTools/LPCDefine'
-    ss.dependency 'LPCTools/LPCUIKit'
+    ss.dependency 'LPCTools/LPCUI/LPCUIKit'
     ss.source_files = 'LPCGodlike/LPCBaseKit/*.{h,m}'
     ss.public_header_files = 'LPCGodlike/LPCBaseKit/*.h'
   end
@@ -69,26 +69,29 @@ s.requires_arc = true
   end
 
   s.subspec 'LPCUI' do |ss|
-    s.subspec 'LPCUIKit' do |ss|
-      ss.source_files = 'LPCGodlike/LPCUI/LPCUIKit/*.{h,m}'
-    ss.public_header_files = 'LPCGodlike/LPCUI/LPCUIKit/*.h'
+    ss.subspec 'LPCUIKit' do |sss|
+      sss.source_files = 'LPCGodlike/LPCUI/LPCUIKit/*.{h,m}'
+      sss.public_header_files = 'LPCGodlike/LPCUI/LPCUIKit/*.h'
     end
 
-    s.subspec 'LPCUtilView' do |ss|
-      s.subspec 'LPCShareView' do |ss|
-        ss.dependency 'LPCTools/LPCBaseKit'
-        ss.source_files = 'LPCGodlike/LPCUI/LPCUtilView/LPCShareView/*.{h,m}'
-        ss.public_header_files = 'LPCGodlike/LPCUI/LPCUtilView/LPCShareView/*.h'
+    ss.subspec 'LPCUtilView' do |sss|
+      sss.subspec 'LPCShareView' do |ssss|
+        ssss.dependency 'LPCTools/LPCBaseKit'
+        ssss.source_files = 'LPCGodlike/LPCUI/LPCUtilView/LPCShareView/*.{h,m}'
+        ssss.public_header_files = 'LPCGodlike/LPCUI/LPCUtilView/LPCShareView/*.h'
       end
 
-      s.subspec 'LPCUIKit' do |ss|
-        ss.source_files = 'LPCGodlike/LPCUI/LPCUtilView/LPCErrorcodeView/*.{h,m}'
-        ss.public_header_files = 'LPCGodlike/LPCUI/LPCUtilView/LPCErrorcodeView/*.h'
+      sss.subspec 'LPCErrorcodeView' do |ssss|
+        ssss.dependency 'LPCTools/LPCCategory'
+        ssss.dependency 'LPCTools/LPCBaseKit'
+        ssss.source_files = 'LPCGodlike/LPCUI/LPCUtilView/LPCErrorcodeView/*.{h,m}'
+        ssss.public_header_files = 'LPCGodlike/LPCUI/LPCUtilView/LPCErrorcodeView/*.h'
       end
 
-      s.subspec 'LPCUIKit' do |ss|
-        ss.source_files = 'LPCGodlike/LPCUI/LPCUtilView/LPCGestureUnlockView/*.{h,m}'
-        ss.public_header_files = 'LPCGodlike/LPCUI/LPCUtilView/LPCGestureUnlockView/*.h'
+      sss.subspec 'LPCGestureUnlockView' do |ssss|
+        ssss.dependency 'LPCTools/LPCBaseKit'
+        ssss.source_files = 'LPCGodlike/LPCUI/LPCUtilView/LPCGestureUnlockView/*.{h,m}'
+        ssss.public_header_files = 'LPCGodlike/LPCUI/LPCUtilView/LPCGestureUnlockView/*.h'
       end
     end
   end
