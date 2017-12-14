@@ -101,8 +101,8 @@
     for (int i = 0; i < 9; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.userInteractionEnabled = NO;
-        [btn setImage:[UIImage imageNamed:@"gesture_normal"] forState:UIControlStateNormal];
-        [btn setImage:[UIImage imageNamed:@"gesture_selected"] forState:UIControlStateSelected];
+        [btn setImage:ImageWithContentsOfFileDefault(@"LPCImages.bundle/lpcImages_gestureunlock_normal") forState:UIControlStateNormal];
+        [btn setImage:ImageWithContentsOfFileDefault(@"LPCImages.bundle/lpcImages_gestureunlock_selected") forState:UIControlStateSelected];
         btn.tag = 1000+i;
         [self addSubview:btn];
     }

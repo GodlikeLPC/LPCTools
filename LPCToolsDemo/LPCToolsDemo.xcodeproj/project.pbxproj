@@ -23,11 +23,6 @@
 		DB5ACEFB1FE25552007C4C98 /* LPCView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5ACEDC1FE25552007C4C98 /* LPCView.m */; };
 		DB5ACEFC1FE25552007C4C98 /* LPCErrorcodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5ACEE01FE25552007C4C98 /* LPCErrorcodeView.m */; };
 		DB5ACEFD1FE25552007C4C98 /* LPCErrorcodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB5ACEE11FE25552007C4C98 /* LPCErrorcodeView.xib */; };
-		DB5ACEFE1FE25552007C4C98 /* gesture_headIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5ACEE31FE25552007C4C98 /* gesture_headIcon@2x.png */; };
-		DB5ACEFF1FE25552007C4C98 /* gesture_indicator_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5ACEE41FE25552007C4C98 /* gesture_indicator_normal@2x.png */; };
-		DB5ACF001FE25552007C4C98 /* gesture_indicator_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5ACEE51FE25552007C4C98 /* gesture_indicator_selected@2x.png */; };
-		DB5ACF011FE25552007C4C98 /* gesture_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5ACEE61FE25552007C4C98 /* gesture_normal@2x.png */; };
-		DB5ACF021FE25552007C4C98 /* gesture_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5ACEE71FE25552007C4C98 /* gesture_selected@2x.png */; };
 		DB5ACF031FE25552007C4C98 /* LPCGesturesUnlockIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5ACEE91FE25552007C4C98 /* LPCGesturesUnlockIndicator.m */; };
 		DB5ACF041FE25552007C4C98 /* LPCGesturesUnlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5ACEEB1FE25552007C4C98 /* LPCGesturesUnlockView.m */; };
 		DB5ACF051FE25552007C4C98 /* LPCGesturesUnlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5ACEED1FE25552007C4C98 /* LPCGesturesUnlockViewController.m */; };
@@ -97,11 +92,6 @@
 		DB5ACEDF1FE25552007C4C98 /* LPCErrorcodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCErrorcodeView.h; sourceTree = "<group>"; };
 		DB5ACEE01FE25552007C4C98 /* LPCErrorcodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCErrorcodeView.m; sourceTree = "<group>"; };
 		DB5ACEE11FE25552007C4C98 /* LPCErrorcodeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LPCErrorcodeView.xib; sourceTree = "<group>"; };
-		DB5ACEE31FE25552007C4C98 /* gesture_headIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_headIcon@2x.png"; sourceTree = "<group>"; };
-		DB5ACEE41FE25552007C4C98 /* gesture_indicator_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_indicator_normal@2x.png"; sourceTree = "<group>"; };
-		DB5ACEE51FE25552007C4C98 /* gesture_indicator_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_indicator_selected@2x.png"; sourceTree = "<group>"; };
-		DB5ACEE61FE25552007C4C98 /* gesture_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_normal@2x.png"; sourceTree = "<group>"; };
-		DB5ACEE71FE25552007C4C98 /* gesture_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_selected@2x.png"; sourceTree = "<group>"; };
 		DB5ACEE81FE25552007C4C98 /* LPCGesturesUnlockIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCGesturesUnlockIndicator.h; sourceTree = "<group>"; };
 		DB5ACEE91FE25552007C4C98 /* LPCGesturesUnlockIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCGesturesUnlockIndicator.m; sourceTree = "<group>"; };
 		DB5ACEEA1FE25552007C4C98 /* LPCGesturesUnlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCGesturesUnlockView.h; sourceTree = "<group>"; };
@@ -275,11 +265,6 @@
 		DB5ACEE21FE25552007C4C98 /* LPCGestureUnlockView */ = {
 			isa = PBXGroup;
 			children = (
-				DB5ACEE31FE25552007C4C98 /* gesture_headIcon@2x.png */,
-				DB5ACEE41FE25552007C4C98 /* gesture_indicator_normal@2x.png */,
-				DB5ACEE51FE25552007C4C98 /* gesture_indicator_selected@2x.png */,
-				DB5ACEE61FE25552007C4C98 /* gesture_normal@2x.png */,
-				DB5ACEE71FE25552007C4C98 /* gesture_selected@2x.png */,
 				DB5ACEE81FE25552007C4C98 /* LPCGesturesUnlockIndicator.h */,
 				DB5ACEE91FE25552007C4C98 /* LPCGesturesUnlockIndicator.m */,
 				DB5ACEEA1FE25552007C4C98 /* LPCGesturesUnlockView.h */,
@@ -457,13 +442,8 @@
 				DBC6E1561F4301C700A4E200 /* LaunchScreen.storyboard in Resources */,
 				DB5ACF061FE25552007C4C98 /* LPCGesturesUnlockViewController.xib in Resources */,
 				DB5ACEEF1FE25552007C4C98 /* LPCImages.bundle in Resources */,
-				DB5ACF011FE25552007C4C98 /* gesture_normal@2x.png in Resources */,
-				DB5ACF001FE25552007C4C98 /* gesture_indicator_selected@2x.png in Resources */,
-				DB5ACEFE1FE25552007C4C98 /* gesture_headIcon@2x.png in Resources */,
-				DB5ACEFF1FE25552007C4C98 /* gesture_indicator_normal@2x.png in Resources */,
 				DBC6E1531F4301C700A4E200 /* Assets.xcassets in Resources */,
 				DBC6E1511F4301C700A4E200 /* Main.storyboard in Resources */,
-				DB5ACF021FE25552007C4C98 /* gesture_selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

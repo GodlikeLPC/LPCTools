@@ -33,8 +33,8 @@
     for (int i = 0; i < 9; i++) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         btn.userInteractionEnabled = NO;
-        [btn setImage:[UIImage imageNamed:@"gesture_indicator_normal"] forState:UIControlStateNormal];
-        [btn setImage:[UIImage imageNamed:@"gesture_indicator_selected"] forState:UIControlStateSelected];
+        [btn setImage:ImageWithContentsOfFileDefault(@"LPCImages.bundle/lpcImages_gestureunlock_indicator_normal") forState:UIControlStateNormal];
+        [btn setImage:ImageWithContentsOfFileDefault(@"LPCImages.bundle/lpcImages_gestureunlock_indicator_selected") forState:UIControlStateSelected];
         [self addSubview:btn];
         [self.buttons addObject:btn];
     }
