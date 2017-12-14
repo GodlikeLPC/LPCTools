@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'LPCTools'
-s.version      = '0.1.2'
+s.version      = '0.1.3'
 s.summary      = 'a component of Tools on iOS'
 s.homepage     = 'https://github.com/lipeichi/LPCTools'
 s.description  = <<-DESC
