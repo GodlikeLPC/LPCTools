@@ -14,7 +14,7 @@
 + (LPCMBProgressHUD *)showHUDAddedTo:(UIView *)view animated:(BOOL)animated
 {
     //设置菊花颜色
-    [UIActivityIndicatorView appearanceWhenContainedIn:[MBProgressHUD class], nil].color = [UIColor whiteColor];
+    [UIActivityIndicatorView appearanceWhenContainedInInstancesOfClasses:@[[MBProgressHUD class]]].color = [UIColor whiteColor];
     LPCMBProgressHUD *hud = [super showHUDAddedTo:view animated:animated];
     // 显示一张图片(mode必须写在customView设置之前)
     hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;

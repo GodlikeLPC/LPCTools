@@ -13,9 +13,8 @@
 
 //只有一个取消按钮的提示框
 + (void)showAlertWithVC:(UIViewController *)vc title:(NSString *)title message:(NSString *)message cancelText:(NSString *)cancelText;
-
-//网络连接状态
-+ (BOOL)networkStatus;
+//网络状态的实时检测
++ (BOOL)isNetWorkReachable;
 /** 打开手电筒 */
 + (void)openFlashlight;
 /** 关闭手电筒 */

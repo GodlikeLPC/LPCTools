@@ -8,7 +8,7 @@
 
 #import "LPCTools.h"
 #import <objc/runtime.h>
-#import "Reachability.h"
+#import <AFNetworking/AFNetworking.h>
 #import <AVFoundation/AVFoundation.h>
 
 @interface LPCTools ()
@@ -32,23 +32,32 @@
     [vc presentViewController:alertController animated:YES completion:nil];
 }
 
-//网络连接状态
-+ (BOOL)networkStatus
+//网络状态的实时检测
++ (BOOL)isNetWorkReachable
 {
-    Reachability *hostReach = [Reachability reachabilityWithHostName:@"www.baidu.com"];
-    switch ([hostReach currentReachabilityStatus]) {
-        case NotReachable:
-            // 没有网络连接
-            return NO;
-            break;
-        case ReachableViaWWAN:
-            // 使用3G网络
-            break;
-        case ReachableViaWiFi:
-            // 使用WiFi网络
-            break;
-    }
-    return YES;
+    AFNetworkReachabilityManager *afNetworkReachabilityManager = [AFNetworkReachabilityManager sharedManager];
+    [afNetworkReachabilityManager startMonitoring];  //开启网络监视器；
+    [afNetworkReachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        switch (status) {
+            case AFNetworkReachabilityStatusNotReachable:{
+                NSLog(@"网络不通");
+                break;
+            }
+            case AFNetworkReachabilityStatusReachableViaWiFi:{
+                NSLog(@"网络通过WIFI连接");
+                break;
+            }
+                
+            case AFNetworkReachabilityStatusReachableViaWWAN:{
+                NSLog(@"网络通过无线连接");
+                break;
+            }
+            default:
+                break;
+        }
+    }];
+    
+    return [AFNetworkReachabilityManager sharedManager].isReachable;
 }
 
 /** 打开手电筒 */
