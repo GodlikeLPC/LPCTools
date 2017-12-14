@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'LPCTools'
-s.version      = '0.1.2'
+s.version      = '0.1.5'
 s.summary      = 'a component of Tools on iOS'
 s.homepage     = 'https://github.com/lipeichi/LPCTools'
 s.description  = <<-DESC
@@ -17,7 +17,7 @@ s.description  = <<-DESC
 DESC
 s.license      = 'MIT'
 s.authors      = {'Godlike' => 'godlikelpc@126.com'}
-s.platform     = :ios, '8.0'
+s.platform     = :ios, '10.0'
 s.source       = {:git => 'https://github.com/lipeichi/LPCTools.git', :tag => s.version}
 s.source_files = 'LPCGodlike/**/*.{h,m}','LPCGodlike/*.{h,m}'
 s.dependency     "AFNetworking"
