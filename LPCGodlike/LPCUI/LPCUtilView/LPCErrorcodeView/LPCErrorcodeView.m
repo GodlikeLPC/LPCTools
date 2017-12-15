@@ -110,7 +110,7 @@
         case ErrorcodeShowType_Back:
         {
             _strNavTitle = @"无数据";
-            strImageName = @"errorcodeView_showType_back";
+            strImageName = @"LPCImages.bundle/lpcImages_errorcodeView_showType_back";
             strErrorText = @"没有相关数据";
             strErrorBtnTitle = @"返回";
         }
@@ -118,7 +118,7 @@
         case ErrorcodeShowType_BackLastpage:
         {
             _strNavTitle = @"页面不存在";
-            strImageName = @"errorcodeView_showType_backLastpage";
+            strImageName = @"LPCImages.bundle/lpcImages_errorcodeView_showType_backLastpage";
             strErrorText = @"亲，您访问的页面不存在";
             strErrorBtnTitle = @"返回上一页";
         }
@@ -126,7 +126,7 @@
         case ErrorcodeShowType_BackHomepage:
         {
             _strNavTitle = @"异常";
-            strImageName = @"errorcodeView_showType_backHomepage";
+            strImageName = @"LPCImages.bundle/lpcImages_errorcodeView_showType_backHomepage";
             strErrorText = @"操作/系统异常";
             strErrorBtnTitle = @"返回首页";
         }
@@ -135,7 +135,7 @@
         case ErrorcodeShowType_Refresh:
         {
             _strNavTitle = @"无网络";
-            strImageName = @"errorcodeView_showType_refresh";
+            strImageName = @"LPCImages.bundle/lpcImages_errorcodeView_showType_refresh";
             strErrorText = @"咦，网络开小差啦";
             strErrorBtnTitle = @"刷新试试";
         }
@@ -143,7 +143,7 @@
         case ErrorcodeShowType_Reload:
         {
             _strNavTitle = @"加载失败";
-            strImageName = @"errorcodeView_showType_reload";
+            strImageName = @"LPCImages.bundle/lpcImages_errorcodeView_showType_reload";
             strErrorText = @"呜，加载失败，请重新加载";
             strErrorBtnTitle = @"重新加载";
         }

@@ -36,6 +36,7 @@
 		DB5ACF201FE25E37007C4C98 /* LPCBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5ACF1F1FE25E37007C4C98 /* LPCBaseTableViewCell.m */; };
 		DB5ACF231FE25F9E007C4C98 /* LPCScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5ACF221FE25F9E007C4C98 /* LPCScrollView.m */; };
 		DB5ACF261FE25FD1007C4C98 /* LPCBaseScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5ACF251FE25FD1007C4C98 /* LPCBaseScrollView.m */; };
+		DB5ACF2B1FE3517E007C4C98 /* NSBundle+LPCLoadResource.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5ACF2A1FE3517E007C4C98 /* NSBundle+LPCLoadResource.m */; };
 		DBC6E1481F4301C700A4E200 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6E1471F4301C700A4E200 /* main.m */; };
 		DBC6E14B1F4301C700A4E200 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6E14A1F4301C700A4E200 /* AppDelegate.m */; };
 		DBC6E14E1F4301C700A4E200 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC6E14D1F4301C700A4E200 /* ViewController.m */; };
@@ -118,6 +119,8 @@
 		DB5ACF241FE25FD1007C4C98 /* LPCBaseScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCBaseScrollView.h; sourceTree = "<group>"; };
 		DB5ACF251FE25FD1007C4C98 /* LPCBaseScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPCBaseScrollView.m; sourceTree = "<group>"; };
 		DB5ACF271FE26100007C4C98 /* LPCThemeDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCThemeDefine.h; sourceTree = "<group>"; };
+		DB5ACF291FE3517E007C4C98 /* NSBundle+LPCLoadResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+LPCLoadResource.h"; sourceTree = "<group>"; };
+		DB5ACF2A1FE3517E007C4C98 /* NSBundle+LPCLoadResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+LPCLoadResource.m"; sourceTree = "<group>"; };
 		DBC6E1431F4301C700A4E200 /* LPCToolsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPCToolsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC6E1471F4301C700A4E200 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DBC6E1491F4301C700A4E200 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -329,6 +332,8 @@
 			children = (
 				DB5ACF121FE259B2007C4C98 /* UIView+LPCCategoryTool.h */,
 				DB5ACF131FE259B2007C4C98 /* UIView+LPCCategoryTool.m */,
+				DB5ACF291FE3517E007C4C98 /* NSBundle+LPCLoadResource.h */,
+				DB5ACF2A1FE3517E007C4C98 /* NSBundle+LPCLoadResource.m */,
 			);
 			path = LPCCategory;
 			sourceTree = "<group>";
@@ -532,6 +537,7 @@
 				DB5ACF041FE25552007C4C98 /* LPCGesturesUnlockView.m in Sources */,
 				DB5ACEF11FE25552007C4C98 /* LPCNotificationManager.m in Sources */,
 				DB5ACEFA1FE25552007C4C98 /* LPCTableViewCell.m in Sources */,
+				DB5ACF2B1FE3517E007C4C98 /* NSBundle+LPCLoadResource.m in Sources */,
 				DB5ACF031FE25552007C4C98 /* LPCGesturesUnlockIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
