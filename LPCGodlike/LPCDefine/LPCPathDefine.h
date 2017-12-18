@@ -17,5 +17,8 @@
 //下载文件存储目录
 #define PATH_DownloadPath [PATH_Document stringByAppendingPathComponent:@"LPCDownloadFile"]
 
+//自动化埋点目录名
+#define FILENAME_UserStatistics @"LPCImages.bundle/LPCGlobalUserStatisticsConfig"
+
 
 #endif /* LPCPathDefine_h */

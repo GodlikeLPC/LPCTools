@@ -22,6 +22,10 @@
     [LPCTools isNetWorkReachable];
 }
 
+- (void)btnAction:(id)sender
+{
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

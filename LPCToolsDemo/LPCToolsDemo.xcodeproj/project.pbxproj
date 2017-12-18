@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2702BAA67A8803F02904B165 /* libPods-LPCToolsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE70995FBD4023B6A6E8FDE5 /* libPods-LPCToolsDemo.a */; };
+		DB1DEB551FE7D24600037F11 /* LPCUserStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1DEB541FE7D24600037F11 /* LPCUserStatistics.m */; };
+		DB1DEB581FE7D36400037F11 /* UIViewController+LPCUserStastistics.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1DEB571FE7D36400037F11 /* UIViewController+LPCUserStastistics.m */; };
+		DB1DEB5B1FE7D3C300037F11 /* UIControl+LPCUserStastistics.m in Sources */ = {isa = PBXBuildFile; fileRef = DB1DEB5A1FE7D3C300037F11 /* UIControl+LPCUserStastistics.m */; };
 		DB5ACEEF1FE25552007C4C98 /* LPCImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DB5ACEC01FE25552007C4C98 /* LPCImages.bundle */; };
 		DB5ACEF01FE25552007C4C98 /* LPCBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5ACEC31FE25552007C4C98 /* LPCBaseManager.m */; };
 		DB5ACEF11FE25552007C4C98 /* LPCNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5ACEC51FE25552007C4C98 /* LPCNotificationManager.m */; };
@@ -49,6 +52,12 @@
 		798803811E9C9BF34F1B051D /* Pods-LPCToolsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPCToolsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPCToolsDemo/Pods-LPCToolsDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BE70995FBD4023B6A6E8FDE5 /* libPods-LPCToolsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LPCToolsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49EFD0FEF477132F38427CE /* Pods-LPCToolsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPCToolsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPCToolsDemo/Pods-LPCToolsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DB1DEB531FE7D24600037F11 /* LPCUserStatistics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCUserStatistics.h; sourceTree = "<group>"; };
+		DB1DEB541FE7D24600037F11 /* LPCUserStatistics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPCUserStatistics.m; sourceTree = "<group>"; };
+		DB1DEB561FE7D36400037F11 /* UIViewController+LPCUserStastistics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LPCUserStastistics.h"; sourceTree = "<group>"; };
+		DB1DEB571FE7D36400037F11 /* UIViewController+LPCUserStastistics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LPCUserStastistics.m"; sourceTree = "<group>"; };
+		DB1DEB591FE7D3C300037F11 /* UIControl+LPCUserStastistics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+LPCUserStastistics.h"; sourceTree = "<group>"; };
+		DB1DEB5A1FE7D3C300037F11 /* UIControl+LPCUserStastistics.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+LPCUserStastistics.m"; sourceTree = "<group>"; };
 		DB5ACEB11FE25552007C4C98 /* LPCColorDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCColorDefine.h; sourceTree = "<group>"; };
 		DB5ACEB21FE25552007C4C98 /* LPCDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCDefine.h; sourceTree = "<group>"; };
 		DB5ACEB31FE25552007C4C98 /* LPCEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCEnum.h; sourceTree = "<group>"; };
@@ -221,6 +230,8 @@
 				DB5ACECA1FE25552007C4C98 /* LPCHTTPSessionManager.m */,
 				DB5ACECB1FE25552007C4C98 /* LPCMBProgressHUD.h */,
 				DB5ACECC1FE25552007C4C98 /* LPCMBProgressHUD.m */,
+				DB1DEB531FE7D24600037F11 /* LPCUserStatistics.h */,
+				DB1DEB541FE7D24600037F11 /* LPCUserStatistics.m */,
 			);
 			path = LPCSDK;
 			sourceTree = "<group>";
@@ -334,6 +345,10 @@
 				DB5ACF131FE259B2007C4C98 /* UIView+LPCCategoryTool.m */,
 				DB5ACF291FE3517E007C4C98 /* NSBundle+LPCLoadResource.h */,
 				DB5ACF2A1FE3517E007C4C98 /* NSBundle+LPCLoadResource.m */,
+				DB1DEB561FE7D36400037F11 /* UIViewController+LPCUserStastistics.h */,
+				DB1DEB571FE7D36400037F11 /* UIViewController+LPCUserStastistics.m */,
+				DB1DEB591FE7D3C300037F11 /* UIControl+LPCUserStastistics.h */,
+				DB1DEB5A1FE7D3C300037F11 /* UIControl+LPCUserStastistics.m */,
 			);
 			path = LPCCategory;
 			sourceTree = "<group>";
@@ -521,10 +536,12 @@
 				DB5ACEF51FE25552007C4C98 /* LPCShareView.m in Sources */,
 				DB5ACF231FE25F9E007C4C98 /* LPCScrollView.m in Sources */,
 				DB5ACEFB1FE25552007C4C98 /* LPCView.m in Sources */,
+				DB1DEB581FE7D36400037F11 /* UIViewController+LPCUserStastistics.m in Sources */,
 				DBC6E14E1F4301C700A4E200 /* ViewController.m in Sources */,
 				DB5ACF091FE255B8007C4C98 /* LPCBaseView.m in Sources */,
 				DBC6E14B1F4301C700A4E200 /* AppDelegate.m in Sources */,
 				DB5ACEF21FE25552007C4C98 /* LPCCommentApp.m in Sources */,
+				DB1DEB551FE7D24600037F11 /* LPCUserStatistics.m in Sources */,
 				DB5ACF051FE25552007C4C98 /* LPCGesturesUnlockViewController.m in Sources */,
 				DB5ACF101FE25904007C4C98 /* LPCObject.m in Sources */,
 				DBC6E1481F4301C700A4E200 /* main.m in Sources */,
@@ -539,6 +556,7 @@
 				DB5ACEFA1FE25552007C4C98 /* LPCTableViewCell.m in Sources */,
 				DB5ACF2B1FE3517E007C4C98 /* NSBundle+LPCLoadResource.m in Sources */,
 				DB5ACF031FE25552007C4C98 /* LPCGesturesUnlockIndicator.m in Sources */,
+				DB1DEB5B1FE7D3C300037F11 /* UIControl+LPCUserStastistics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
