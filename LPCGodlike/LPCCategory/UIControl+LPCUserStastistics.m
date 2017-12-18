@@ -39,19 +39,12 @@
     if ([[[event allTouches] anyObject] phase] == UITouchPhaseEnded) {
         NSString *actionString = NSStringFromSelector(action);
         NSString *targetName = NSStringFromClass([target class]);
-        NSDictionary *configDict = [self dictionaryFromUserStatisticsConfigPlist];
+        NSDictionary *configDict = [LPCUserStatistics dictionaryFromUserStatisticsConfigPlist];
         eventID = configDict[targetName][@"ControlEventIDs"][actionString];
     }
     if (eventID != nil) {
         [LPCUserStatistics sendEventToServer:eventID];
     }
-}
-
-- (NSDictionary *)dictionaryFromUserStatisticsConfigPlist
-{
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:FILENAME_UserStatistics ofType:@"plist"];
-    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:filePath];
-    return dic;
 }
 
 

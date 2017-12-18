@@ -18,6 +18,14 @@
     
 }
 
++ (NSDictionary *)dictionaryFromUserStatisticsConfigPlist
+{
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:FILENAME_UserStatistics ofType:@"plist"];
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:filePath];
+    return dic;
+}
+
+
 #pragma mark -- 页面统计部分
 
 + (void)enterPageViewWithPageID:(NSString *)pageID

@@ -18,6 +18,8 @@
  */
 + (void)configure;
 
++ (NSDictionary *)dictionaryFromUserStatisticsConfigPlist;
+
 + (void)enterPageViewWithPageID:(NSString *)pageID;
 
 + (void)leavePageViewWithPageID:(NSString *)pageID;

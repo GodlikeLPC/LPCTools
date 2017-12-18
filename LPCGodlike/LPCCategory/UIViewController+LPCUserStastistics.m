@@ -50,7 +50,7 @@
 {
     NSString *pageID = [self pageEventID:YES];
     if (pageID) {
-        [LPCUserStatistics sendEventToServer:pageID];
+        [LPCUserStatistics enterPageViewWithPageID:pageID];
     }
 }
 
@@ -58,22 +58,15 @@
 {
     NSString *pageID = [self pageEventID:NO];
     if (pageID) {
-        [LPCUserStatistics sendEventToServer:pageID];
+        [LPCUserStatistics leavePageViewWithPageID:pageID];
     }
 }
 
 - (NSString *)pageEventID:(BOOL)bEnterPage
 {
-    NSDictionary *configDict = [self dictionaryFromUserStatisticsConfigPlist];
+    NSDictionary *configDict = [LPCUserStatistics dictionaryFromUserStatisticsConfigPlist];
     NSString *selfClassName = NSStringFromClass([self class]);
     return configDict[selfClassName][@"PageEventIDs"][bEnterPage ? @"Enter" : @"Leave"];
-}
-
-- (NSDictionary *)dictionaryFromUserStatisticsConfigPlist
-{
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:FILENAME_UserStatistics ofType:@"plist"];
-    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:filePath];
-    return dic;
 }
 
 
