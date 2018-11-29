@@ -1,0 +1,16 @@
+PODS:
+  - LPCTools (0.1.0)
+
+DEPENDENCIES:
+  - LPCTools (from `../`)
+
+EXTERNAL SOURCES:
+  LPCTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LPCTools: 1bb350177e8f73e8632a1befec359542f155a4aa
+
+PODFILE CHECKSUM: d1da11b463eca073c632c66d1cfbfa5faf84fcbe
+
+COCOAPODS: 1.5.3

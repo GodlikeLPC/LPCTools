@@ -1,8 +1,0 @@
-platform :ios, '10.0'
-
-target 'LPCToolsDemo' do
-
-    pod 'MBProgressHUD'
-    pod 'AFNetworking'
-
-end

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LPCTools_Example' do
+  pod 'LPCTools', :path => '../'
+
+  target 'LPCTools_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,6 @@
+framework module LPCTools {
+  umbrella header "LPCTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

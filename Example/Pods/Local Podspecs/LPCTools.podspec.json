@@ -1,0 +1,22 @@
+{
+  "name": "LPCTools",
+  "version": "0.1.0",
+  "summary": "A short description of LPCTools.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/godlikelpc@gmail.com/LPCTools",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "godlikelpc@gmail.com": "lipeichi@jd.com"
+  },
+  "source": {
+    "git": "https://github.com/godlikelpc@gmail.com/LPCTools.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LPCTools/Classes/**/*"
+}
