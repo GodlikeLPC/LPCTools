@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		04E6FB580107FC6E44941DBDCD9764C7 /* Pods-LPCTools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD7BE05617111741EE8291C5B372F9A /* Pods-LPCTools_Example-dummy.m */; };
+		3187B9A421B000760055FEC2 /* LPCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 3187B99E21B000760055FEC2 /* LPCLabel.h */; };
+		3187B9A521B000760055FEC2 /* LPCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3187B99F21B000760055FEC2 /* LPCLabel.m */; };
+		3187B9A621B000760055FEC2 /* LPCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3187B9A021B000760055FEC2 /* LPCKit.h */; };
+		3187B9A721B000760055FEC2 /* LPCTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 3187B9A121B000760055FEC2 /* LPCTool.h */; };
+		3187B9A821B000760055FEC2 /* LPCToolPrefix.h in Headers */ = {isa = PBXBuildFile; fileRef = 3187B9A221B000760055FEC2 /* LPCToolPrefix.h */; };
+		3187B9A921B000760055FEC2 /* LPCTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3187B9A321B000760055FEC2 /* LPCTool.m */; };
 		353E4318ECD58AE102E392EA7F012EE9 /* LPCTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9FCE0294D66EB837C2310174BFC827 /* LPCTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65924410BC52C2290C2F452BD87B5AC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		69E259216AE6320485ED88268F528CAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
@@ -45,6 +51,12 @@
 		276930932E4CD1D0991F0DBB3D2F6DE8 /* Pods-LPCTools_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LPCTools_Example-resources.sh"; sourceTree = "<group>"; };
 		28082EF75E26C8DC58561237EB57EFBF /* Pods-LPCTools_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPCTools_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3176EEA2408C05555D3AA6088E63E152 /* Pods_LPCTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPCTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3187B99E21B000760055FEC2 /* LPCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCLabel.h; sourceTree = "<group>"; };
+		3187B99F21B000760055FEC2 /* LPCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPCLabel.m; sourceTree = "<group>"; };
+		3187B9A021B000760055FEC2 /* LPCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPCKit.h; sourceTree = "<group>"; };
+		3187B9A121B000760055FEC2 /* LPCTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPCTool.h; path = LPCSource/LPCTool.h; sourceTree = "<group>"; };
+		3187B9A221B000760055FEC2 /* LPCToolPrefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LPCToolPrefix.h; path = LPCSource/LPCToolPrefix.h; sourceTree = "<group>"; };
+		3187B9A321B000760055FEC2 /* LPCTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LPCTool.m; path = LPCSource/LPCTool.m; sourceTree = "<group>"; };
 		393EE8DF15D91B420E3131714290B6EC /* LPCTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPCTools.xcconfig; sourceTree = "<group>"; };
 		3C12DD9F7BB483F41C541A683FD1E9FD /* Pods-LPCTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPCTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		53053E882F4DB76FBB2F83B203FFF0FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +120,25 @@
 				1D48D61B8B30ACD5C1E65386B598268A /* Pods_LPCTools_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3187B99C21B000760055FEC2 /* LPCKit */ = {
+			isa = PBXGroup;
+			children = (
+				3187B99D21B000760055FEC2 /* LPCLabel */,
+				3187B9A021B000760055FEC2 /* LPCKit.h */,
+			);
+			name = LPCKit;
+			path = LPCSource/LPCKit;
+			sourceTree = "<group>";
+		};
+		3187B99D21B000760055FEC2 /* LPCLabel */ = {
+			isa = PBXGroup;
+			children = (
+				3187B99E21B000760055FEC2 /* LPCLabel.h */,
+				3187B99F21B000760055FEC2 /* LPCLabel.m */,
+			);
+			path = LPCLabel;
 			sourceTree = "<group>";
 		};
 		417F473466695AEE11DECCD1D27E0708 /* Support Files */ = {
@@ -174,6 +205,10 @@
 		98AA6B67049C42135F0E892F3005C6D3 /* LPCTools */ = {
 			isa = PBXGroup;
 			children = (
+				3187B99C21B000760055FEC2 /* LPCKit */,
+				3187B9A121B000760055FEC2 /* LPCTool.h */,
+				3187B9A321B000760055FEC2 /* LPCTool.m */,
+				3187B9A221B000760055FEC2 /* LPCToolPrefix.h */,
 				8E50B7C5630F8CFEFE93EC5C648B6139 /* Pod */,
 				417F473466695AEE11DECCD1D27E0708 /* Support Files */,
 			);
@@ -247,7 +282,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3187B9A721B000760055FEC2 /* LPCTool.h in Headers */,
 				353E4318ECD58AE102E392EA7F012EE9 /* LPCTools-umbrella.h in Headers */,
+				3187B9A821B000760055FEC2 /* LPCToolPrefix.h in Headers */,
+				3187B9A421B000760055FEC2 /* LPCLabel.h in Headers */,
+				3187B9A621B000760055FEC2 /* LPCKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +422,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3187B9A921B000760055FEC2 /* LPCTool.m in Sources */,
+				3187B9A521B000760055FEC2 /* LPCLabel.m in Sources */,
 				709C1E0B8D3317E3CC0495359E62AD4A /* LPCTools-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
