@@ -1,11 +1,23 @@
-use_frameworks!
+#use_frameworks!
 
 target 'LPCTools_Example' do
-  pod 'LPCTools', :path => '../'
+    platform :ios,'9.0'
+    inhibit_all_warnings!
+    
+    pod 'LPCTools', :path => '../'
 
   target 'LPCTools_Tests' do
     inherit! :search_paths
-
     
   end
+end
+
+
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '8.0'
+        end
+    end
 end
