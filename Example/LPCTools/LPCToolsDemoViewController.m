@@ -7,6 +7,7 @@
 //
 
 #import "LPCToolsDemoViewController.h"
+#import "LPCUITool.h"
 
 @interface LPCToolsDemoViewController ()
 
@@ -19,7 +20,14 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-//    [LPCUITool show];
+    
+}
+
+- (IBAction)btnAction:(id)sender
+{
+    [LPCUITool showAlertControllerWithViewController:self preferredStyle:UIAlertControllerStyleActionSheet title:@"godlike" message:@"1" cancelTitle:@"qx" firstBtnTitle:@"g" secondBtnTitle:@"s" actionBlock:^(NSInteger index) {
+        NSLog(@"%ld",index);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

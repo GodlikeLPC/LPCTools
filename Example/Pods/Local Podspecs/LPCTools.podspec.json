@@ -19,11 +19,12 @@
     "ios": "9.0"
   },
   "source_files": [
-    "LPCSource/*.h",
-    "LPCSource/**/*.(h,m)",
-    "LPCSource/**/**/*.(h,m)"
+    "LPCSource/*.{h,m}",
+    "LPCSource/**/*.{h,m}",
+    "LPCSource/**/**/*.{h,m}"
   ],
   "public_header_files": [
+    "LPCSource/*.h",
     "LPCSource/**/*.h",
     "LPCSource/**/**/*.h"
   ],
