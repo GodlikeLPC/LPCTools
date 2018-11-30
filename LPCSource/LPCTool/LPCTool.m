@@ -6,8 +6,22 @@
 //
 
 #import "LPCTool.h"
+#import <AVFoundation/AVFoundation.h>
 
 @implementation LPCTool
+
+//操作手电筒：打开、关闭
++ (void)operateFlashlight:(BOOL)isOpen
+{
+    AVCaptureDevice *captureDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    if ([captureDevice hasTorch]) {
+        if ([captureDevice lockForConfiguration:nil]) {
+            captureDevice.torchMode = isOpen?AVCaptureTorchModeOn:AVCaptureTorchModeOff;
+            [captureDevice unlockForConfiguration];
+        }
+    }
+}
+
 
 #pragma mark - Location
 //地球坐标 ---> 火星坐标
@@ -30,7 +44,8 @@ const double ee = 0.00669342162296594323;
     return [[CLLocation alloc] initWithLatitude:location.coordinate.latitude + dLat longitude:location.coordinate.longitude + dLon];
 }
 
-+ (BOOL)outOfChina:(CLLocation *)location {
++ (BOOL)outOfChina:(CLLocation *)location
+{
     if (location.coordinate.longitude < 72.004 || location.coordinate.longitude > 137.8347) {
         return YES;
     }
@@ -40,7 +55,8 @@ const double ee = 0.00669342162296594323;
     return NO;
 }
 
-+ (double)transformLatWithX:(double)x y:(double)y {
++ (double)transformLatWithX:(double)x y:(double)y
+{
     double ret = -100.0 + 2.0 * x + 3.0 * y + 0.2 * y * y + 0.1 * x * y + 0.2 * sqrt(fabs(x));
     ret += (20.0 * sin(6.0 * x * M_PI) + 20.0 * sin(2.0 * x * M_PI)) * 2.0 / 3.0;
     ret += (20.0 * sin(y * M_PI) + 40.0 * sin(y / 3.0 * M_PI)) * 2.0 / 3.0;
@@ -48,12 +64,38 @@ const double ee = 0.00669342162296594323;
     return ret;
 }
 
-+ (double)transformLonWithX:(double)x y:(double)y {
++ (double)transformLonWithX:(double)x y:(double)y
+{
     double ret = 300.0 + x + 2.0 * y + 0.1 * x * x + 0.1 * x * y + 0.1 * sqrt(fabs(x));
     ret += (20.0 * sin(6.0 * x * M_PI) + 20.0 * sin(2.0 * x * M_PI)) * 2.0 / 3.0;
     ret += (20.0 * sin(x * M_PI) + 40.0 * sin(x / 3.0 * M_PI)) * 2.0 / 3.0;
     ret += (150.0 * sin(x / 12.0 * M_PI) + 300.0 * sin(x / 30.0 * M_PI)) * 2.0 / 3.0;
     return ret;
 }
+
+
+//POST请求字典转为字符串格式
++ (NSString *)strRequestWithDictionary:(NSDictionary *)dict
+{
+    if (dict == nil || dict.allKeys.count == 0) {
+        return @"";
+    }
+    NSMutableString *strReturn = [[NSMutableString alloc] init];
+    
+    for (NSString *strKey in [dict allKeys]) {
+        [strReturn appendString:@"&"];
+        [strReturn appendString:strKey];
+        [strReturn appendString:@"="];
+        [strReturn appendFormat:@"%@",dict[strKey]];
+    }
+    
+    if (strReturn.length > 0) {
+        [strReturn replaceCharactersInRange:NSMakeRange(0, 1) withString:@"?"];
+    }
+    
+    return strReturn;
+}
+
+
 
 @end

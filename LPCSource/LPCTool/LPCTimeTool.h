@@ -12,6 +12,16 @@
  */
 @interface LPCTimeTool : NSObject
 
+/*
+ 返回当前时间戳
+ */
++ (long long)nowTimeStampFromCurrentDate;
+
+/*
+ 根据时间戳格式化日期字符串
+ */
++ (NSString *)getDateStrFromDateStamp:(long long)dateStamp;
+
 /**
  判断当前时间是否在两个时间区间内
 

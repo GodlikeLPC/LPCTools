@@ -52,4 +52,9 @@
                                               secondBtnTitle:(NSString *)secondBtnTitle
                                                  actionBlock:(void(^)(NSInteger index))actionBlock;
 
+/**
+ 根据颜色生成图片
+ */
++ (UIImage*)createImageWithColor:(UIColor*)color;
+
 @end

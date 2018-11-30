@@ -1,7 +1,7 @@
 #
-# Be sure to run `pod lib lint LPCTools.podspec' to ensure this is a
-# valid spec before submitting.
+# Be sure to run `pod lib lint LPCTools.podspec' to ensure this is a valid spec before submitting.
 #
+# run 'pod trunk push LPCTools.podspec' to push
 
 Pod::Spec.new do |s|
   s.name             = 'LPCTools'

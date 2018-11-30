@@ -8,6 +8,7 @@
 
 #import "LPCToolsDemoViewController.h"
 #import "LPCUITool.h"
+#import "LPCTool.h"
 
 @interface LPCToolsDemoViewController ()
 
@@ -20,20 +21,32 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    
-}
-
-- (IBAction)btnAction:(id)sender
-{
-    [LPCUITool showAlertControllerWithViewController:self preferredStyle:UIAlertControllerStyleActionSheet title:@"godlike" message:@"1" cancelTitle:@"qx" firstBtnTitle:@"g" secondBtnTitle:@"s" actionBlock:^(NSInteger index) {
-        NSLog(@"%ld",index);
-    }];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+#pragma mark - Action
+- (IBAction)btnAction:(id)sender
+{
+    /*
+    [LPCTool operateFlashlight:YES];
+    
+    [LPCUITool showAlertControllerWithViewController:self preferredStyle:UIAlertControllerStyleActionSheet title:@"godlike" message:@"1" cancelTitle:@"qx" firstBtnTitle:@"g" secondBtnTitle:@"s" actionBlock:^(NSInteger index) {
+        NSLog(@"%ld",index);
+    }];
+     */
+}
+
+- (IBAction)btnAction2:(id)sender
+{
+    /*
+    [LPCTool operateFlashlight:NO];
+     */
 }
 
 @end

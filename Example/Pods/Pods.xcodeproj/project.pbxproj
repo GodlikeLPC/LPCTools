@@ -10,6 +10,7 @@
 		1925A0A6F3888E546158270F91B9AF3C /* LPCUITool.h in Headers */ = {isa = PBXBuildFile; fileRef = 962AF750B33B4413D2A72A251EC04658 /* LPCUITool.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		1A45B3B105905D4D925489991E3CD163 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFE618309EED25F562C1EFAA2F78A2B /* MapKit.framework */; };
 		1E7C03FD4396D0EECD0BF63B147190F7 /* Pods-LPCTools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4778E14100C81B349CFE86492DFBDBEF /* Pods-LPCTools_Example-dummy.m */; };
+		317B454B21B13406002CC49F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317B454A21B13406002CC49F /* AVFoundation.framework */; };
 		33F3931D655449CF530AD88E63A634AD /* LPCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F18528A97863E80B9691092F1C3619C /* LPCLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3594F1A93319C207A7F5B366861B3D2F /* LPCUITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A25DBAFD40816CF4E2BD94ED360AC1C /* LPCUITool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		412E1FCE167DE87CE2CD1B3AC2B2A3CB /* LPCTimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 36564B2D5F616298A209BD733C22DDBF /* LPCTimeTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -50,6 +51,7 @@
 		1F18528A97863E80B9691092F1C3619C /* LPCLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPCLabel.h; sourceTree = "<group>"; };
 		281F40B9627E98B8A3EBE5684BB9B3B8 /* Pods-LPCTools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LPCTools_Tests-dummy.m"; sourceTree = "<group>"; };
 		2BC89AD1F5BB3CAA3A74AE0DF2A6B8E6 /* Pods-LPCTools_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPCTools_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		317B454A21B13406002CC49F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		36564B2D5F616298A209BD733C22DDBF /* LPCTimeTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPCTimeTool.m; sourceTree = "<group>"; };
 		37836185F8B886D7FB8BDBA3A7A4BA8D /* Pods-LPCTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPCTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		41A6C6C30D0B58AC673BEC1B37900C17 /* LPCTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPCTools.xcconfig; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317B454B21B13406002CC49F /* AVFoundation.framework in Frameworks */,
 				FB2D7FBB0519B472A4F9CFC5A0A52781 /* CoreLocation.framework in Frameworks */,
 				1A45B3B105905D4D925489991E3CD163 /* MapKit.framework in Frameworks */,
 				62D1AB14094C36BA5C73241D5E8BFBA5 /* UIKit.framework in Frameworks */,
@@ -114,6 +117,7 @@
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				317B454A21B13406002CC49F /* AVFoundation.framework */,
 				C66803EA7C49567D545C07F8F64A64CA /* iOS */,
 			);
 			name = Frameworks;
