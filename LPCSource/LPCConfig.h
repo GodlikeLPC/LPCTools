@@ -9,4 +9,7 @@
 #define LPCConfig_h
 
 
+#define LPC_Test @"李沛池测试专用"
+
+
 #endif /* LPCConfig_h */

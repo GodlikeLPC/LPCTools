@@ -11,6 +11,12 @@
 		1A45B3B105905D4D925489991E3CD163 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFE618309EED25F562C1EFAA2F78A2B /* MapKit.framework */; };
 		1E7C03FD4396D0EECD0BF63B147190F7 /* Pods-LPCTools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4778E14100C81B349CFE86492DFBDBEF /* Pods-LPCTools_Example-dummy.m */; };
 		317B454B21B13406002CC49F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 317B454A21B13406002CC49F /* AVFoundation.framework */; };
+		31BC72CD21B6468600C55E8C /* LPCCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 31BC72CB21B6468600C55E8C /* LPCCollectionView.h */; };
+		31BC72CE21B6468600C55E8C /* LPCCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BC72CC21B6468600C55E8C /* LPCCollectionView.m */; };
+		31BC72D121B646F900C55E8C /* LPCCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 31BC72CF21B646F900C55E8C /* LPCCollectionViewCell.h */; };
+		31BC72D221B646F900C55E8C /* LPCCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BC72D021B646F900C55E8C /* LPCCollectionViewCell.m */; };
+		31BC72D621B6477000C55E8C /* LPCPageControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 31BC72D421B6477000C55E8C /* LPCPageControl.h */; };
+		31BC72D721B6477000C55E8C /* LPCPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BC72D521B6477000C55E8C /* LPCPageControl.m */; };
 		33F3931D655449CF530AD88E63A634AD /* LPCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F18528A97863E80B9691092F1C3619C /* LPCLabel.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3594F1A93319C207A7F5B366861B3D2F /* LPCUITool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A25DBAFD40816CF4E2BD94ED360AC1C /* LPCUITool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		412E1FCE167DE87CE2CD1B3AC2B2A3CB /* LPCTimeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 36564B2D5F616298A209BD733C22DDBF /* LPCTimeTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -52,6 +58,30 @@
 		281F40B9627E98B8A3EBE5684BB9B3B8 /* Pods-LPCTools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LPCTools_Tests-dummy.m"; sourceTree = "<group>"; };
 		2BC89AD1F5BB3CAA3A74AE0DF2A6B8E6 /* Pods-LPCTools_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPCTools_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		317B454A21B13406002CC49F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		31BC72CB21B6468600C55E8C /* LPCCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCCollectionView.h; sourceTree = "<group>"; };
+		31BC72CC21B6468600C55E8C /* LPCCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPCCollectionView.m; sourceTree = "<group>"; };
+		31BC72CF21B646F900C55E8C /* LPCCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCCollectionViewCell.h; sourceTree = "<group>"; };
+		31BC72D021B646F900C55E8C /* LPCCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPCCollectionViewCell.m; sourceTree = "<group>"; };
+		31BC72D421B6477000C55E8C /* LPCPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCPageControl.h; sourceTree = "<group>"; };
+		31BC72D521B6477000C55E8C /* LPCPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPCPageControl.m; sourceTree = "<group>"; };
+		31BC72D921B6485700C55E8C /* LPCDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCDefine.h; sourceTree = "<group>"; };
+		31BC72DA21B648FC00C55E8C /* LPCEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCEnum.h; sourceTree = "<group>"; };
+		31BC72DB21B6490400C55E8C /* LPCKeyDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCKeyDefine.h; sourceTree = "<group>"; };
+		31BC72DC21B6490E00C55E8C /* LPCURLDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCURLDefine.h; sourceTree = "<group>"; };
+		31BC72DD21B6491600C55E8C /* LPCViewDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCViewDefine.h; sourceTree = "<group>"; };
+		31BC72DF21B6493800C55E8C /* LPCValueDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCValueDefine.h; sourceTree = "<group>"; };
+		31BC72E021B6494500C55E8C /* LPCThemeDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCThemeDefine.h; sourceTree = "<group>"; };
+		31BC72E121B6494C00C55E8C /* LPCFrameDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCFrameDefine.h; sourceTree = "<group>"; };
+		31BC72E221B6495500C55E8C /* LPCOtherDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCOtherDefine.h; sourceTree = "<group>"; };
+		31BC72E421B6497400C55E8C /* LPCStringDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCStringDefine.h; sourceTree = "<group>"; };
+		31BC72E521B6497C00C55E8C /* LPCSystemDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCSystemDefine.h; sourceTree = "<group>"; };
+		31BC72E621B6498500C55E8C /* LPCVersionDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCVersionDefine.h; sourceTree = "<group>"; };
+		31BC72E721B6498F00C55E8C /* LPCFunctionDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCFunctionDefine.h; sourceTree = "<group>"; };
+		31BC72E821B6499600C55E8C /* LPCLanguageDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCLanguageDefine.h; sourceTree = "<group>"; };
+		31BC72E921B649E400C55E8C /* LPCPathDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCPathDefine.h; sourceTree = "<group>"; };
+		31BC72EC21B6540300C55E8C /* LPCColorDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCColorDefine.h; sourceTree = "<group>"; };
+		31BC72ED21B6540D00C55E8C /* LPCFontDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCFontDefine.h; sourceTree = "<group>"; };
+		31BC72EF21B657BE00C55E8C /* LPCObjectDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCObjectDefine.h; sourceTree = "<group>"; };
 		36564B2D5F616298A209BD733C22DDBF /* LPCTimeTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LPCTimeTool.m; sourceTree = "<group>"; };
 		37836185F8B886D7FB8BDBA3A7A4BA8D /* Pods-LPCTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LPCTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		41A6C6C30D0B58AC673BEC1B37900C17 /* LPCTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPCTools.xcconfig; sourceTree = "<group>"; };
@@ -135,11 +165,58 @@
 		19D5D0E847029C484BA5F7A47D8E3462 /* LPCUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				31BC72D321B6475C00C55E8C /* LPCPageControl */,
+				31BC72CA21B6466D00C55E8C /* LPCCollectionView */,
 				E012DD7BBD90FBEE1B1723C42340F5C1 /* LPCUIKit.h */,
 				431D6F43A3830621019D4CA8640EC964 /* LPCLabel */,
 			);
 			name = LPCUIKit;
 			path = LPCSource/LPCUIKit;
+			sourceTree = "<group>";
+		};
+		31BC72CA21B6466D00C55E8C /* LPCCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				31BC72CB21B6468600C55E8C /* LPCCollectionView.h */,
+				31BC72CC21B6468600C55E8C /* LPCCollectionView.m */,
+				31BC72CF21B646F900C55E8C /* LPCCollectionViewCell.h */,
+				31BC72D021B646F900C55E8C /* LPCCollectionViewCell.m */,
+			);
+			path = LPCCollectionView;
+			sourceTree = "<group>";
+		};
+		31BC72D321B6475C00C55E8C /* LPCPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				31BC72D421B6477000C55E8C /* LPCPageControl.h */,
+				31BC72D521B6477000C55E8C /* LPCPageControl.m */,
+			);
+			path = LPCPageControl;
+			sourceTree = "<group>";
+		};
+		31BC72D821B647F300C55E8C /* LPCDefine */ = {
+			isa = PBXGroup;
+			children = (
+				31BC72D921B6485700C55E8C /* LPCDefine.h */,
+				31BC72DA21B648FC00C55E8C /* LPCEnum.h */,
+				31BC72DB21B6490400C55E8C /* LPCKeyDefine.h */,
+				31BC72DC21B6490E00C55E8C /* LPCURLDefine.h */,
+				31BC72E921B649E400C55E8C /* LPCPathDefine.h */,
+				31BC72DD21B6491600C55E8C /* LPCViewDefine.h */,
+				31BC72DF21B6493800C55E8C /* LPCValueDefine.h */,
+				31BC72E221B6495500C55E8C /* LPCOtherDefine.h */,
+				31BC72E421B6497400C55E8C /* LPCStringDefine.h */,
+				31BC72E121B6494C00C55E8C /* LPCFrameDefine.h */,
+				31BC72EF21B657BE00C55E8C /* LPCObjectDefine.h */,
+				31BC72ED21B6540D00C55E8C /* LPCFontDefine.h */,
+				31BC72EC21B6540300C55E8C /* LPCColorDefine.h */,
+				31BC72E021B6494500C55E8C /* LPCThemeDefine.h */,
+				31BC72E521B6497C00C55E8C /* LPCSystemDefine.h */,
+				31BC72E621B6498500C55E8C /* LPCVersionDefine.h */,
+				31BC72E721B6498F00C55E8C /* LPCFunctionDefine.h */,
+				31BC72E821B6499600C55E8C /* LPCLanguageDefine.h */,
+			);
+			path = LPCDefine;
 			sourceTree = "<group>";
 		};
 		431D6F43A3830621019D4CA8640EC964 /* LPCLabel */ = {
@@ -177,6 +254,7 @@
 		6C6B230E3A213CE1B6DB2A1B1978A1D0 /* LPCTools */ = {
 			isa = PBXGroup;
 			children = (
+				31BC72D821B647F300C55E8C /* LPCDefine */,
 				540418A8E8C6DB6E94E3CDD5BB2D4863 /* LPCConfig.h */,
 				5C2A8BD9D5F0E7C4F82F1263296A9907 /* LPCToolPrefix.h */,
 				A45CC1720433A11B69946EB283BD998E /* LPCTool */,
@@ -282,6 +360,9 @@
 				72E247E47792E60F4EBD82E6237B5781 /* LPCToolPrefix.h in Headers */,
 				57772E5A05EA79882E787B7FA4EA23AC /* LPCUIKit.h in Headers */,
 				1925A0A6F3888E546158270F91B9AF3C /* LPCUITool.h in Headers */,
+				31BC72D621B6477000C55E8C /* LPCPageControl.h in Headers */,
+				31BC72CD21B6468600C55E8C /* LPCCollectionView.h in Headers */,
+				31BC72D121B646F900C55E8C /* LPCCollectionViewCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,10 +477,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31BC72D721B6477000C55E8C /* LPCPageControl.m in Sources */,
+				31BC72CE21B6468600C55E8C /* LPCCollectionView.m in Sources */,
 				F84A21B9239C617D4555322D2C70447B /* LPCLabel.m in Sources */,
 				412E1FCE167DE87CE2CD1B3AC2B2A3CB /* LPCTimeTool.m in Sources */,
 				FA3C2676D91737F8EC1C6FDF59F07A40 /* LPCTool.m in Sources */,
 				9C14AA612B27645D35C097C904B9AEC1 /* LPCTools-dummy.m in Sources */,
+				31BC72D221B646F900C55E8C /* LPCCollectionViewCell.m in Sources */,
 				3594F1A93319C207A7F5B366861B3D2F /* LPCUITool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
