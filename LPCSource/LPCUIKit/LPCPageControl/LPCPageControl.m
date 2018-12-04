@@ -7,7 +7,6 @@
 
 #import "LPCPageControl.h"
 
-
 const float sizeDot = 5.f;
 const float magrin  = 5.f; // 圆点间距
 
@@ -21,7 +20,7 @@ const float magrin  = 5.f; // 圆点间距
     //计算整个pageControll的宽度
     CGFloat newW = (self.subviews.count - 1 ) * marginX;
     //设置新frame
-    self.frame = CGRectMake(SCREENWIDTH/2-(newW + sizeDot)/2, self.frame.origin.y, newW + sizeDot, self.frame.size.height);
+    self.frame = CGRectMake(WIDTH_Screen/2-(newW + sizeDot)/2, self.frame.origin.y, newW + sizeDot, self.frame.size.height);
     //遍历subview,设置圆点frame
     for (int i = 0; i < [self.subviews count]; i++) {
         UIImageView* dot = [self.subviews objectAtIndex:i];

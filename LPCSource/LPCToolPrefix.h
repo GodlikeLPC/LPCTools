@@ -8,5 +8,7 @@
 #ifndef LPCToolPrefix_h
 #define LPCToolPrefix_h
 
+#import "LPCDefine.h"
+#import "LPCConfig.h"
 
 #endif /* LPCToolPrefix_h */

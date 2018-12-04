@@ -13,6 +13,7 @@
 #define SYSTEM_Retina        ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
 //设备是否Iphone 5
 #define SYSTEM_Iphone5       ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define SYSTEM_IPHONE_Plus   ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(414*3, 736*3), [[UIScreen mainScreen] currentMode].size) : NO)
 //是否是iPad
 #define SYSTEM_Ipad          (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
