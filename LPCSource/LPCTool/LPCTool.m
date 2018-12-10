@@ -96,6 +96,25 @@ const double ee = 0.00669342162296594323;
     return strReturn;
 }
 
+//打开mail
++ (void)openEmail:(NSString *)s {
+//    OPENURL([NSString stringWithFormat:@"mailto://%@",s]);
+}
+//拨打电话
++ (void)openPhone:(NSString *)s {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"mailto://%@",s]]];
+//    OPENURL(<#appScheme#>)
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",s]]];
+}
+//打开短信
++ (void)openSms:(NSString *)s {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"sms://%@",s]]];
+}
+//打开浏览器
++ (void)openBrower:(NSString *)s {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://%@",s]]];
+}
+
 
 
 @end

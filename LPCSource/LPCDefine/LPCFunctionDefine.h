@@ -27,9 +27,9 @@
 #define NotNull_number(key)      [dic objectForKey:key] != [NSNull null] ? [dic objectForKey:key] : @"0"
 
 //是否存在URL
-#define CANOpenURL(appScheme)    ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appScheme]])
+#define CANOpenURL(appScheme)    [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:appScheme]]
 //打开URL
-#define OPENURL(appScheme)       ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:appScheme]])
+#define OPENURL(appScheme)       [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appScheme]]
 
 /// 第一个参数是当下的控制器适配iOS11 一下的，第二个参数表示scrollview或子类
 #define AdjustsScrollViewInsetNever(controller,view) if(@available(iOS 11.0, *)) {view.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;} else if([controller isKindOfClass:[UIViewController class]]) {controller.automaticallyAdjustsScrollViewInsets = false;}

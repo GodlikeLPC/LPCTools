@@ -21,7 +21,8 @@
   "source_files": [
     "LPCSource/*.{h,m}",
     "LPCSource/**/*.{h,m}",
-    "LPCSource/**/**/*.{h,m}"
+    "LPCSource/**/**/*.{h,m}",
+    "LPCSource/**/*.h"
   ],
   "public_header_files": [
     "LPCSource/*.h",

@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/GodlikeLPC/LPCTools.git', :tag => s.version.to_s }
   s.ios.deployment_target = '9.0'
   
-  s.source_files = 'LPCSource/*.{h,m}','LPCSource/**/*.{h,m}','LPCSource/**/**/*.{h,m}'
+  s.source_files = 'LPCSource/*.{h,m}','LPCSource/**/*.{h,m}','LPCSource/**/**/*.{h,m}','LPCSource/**/*.h'
   
   # s.resource_bundles = {
   #   'LPCTools' => ['LPCTools/Assets/*.png']
