@@ -12,6 +12,7 @@
 
 #import "LPCPageControl.h"
 
+#import "LPCScrollView.h"
 #import "LPCCollectionView.h"
 #import "LPCCollectionViewCell.h"
 

@@ -9,4 +9,9 @@
 
 @interface LPCLabel : UILabel
 
+/**
+ 文字内边距
+ */
+@property (assign, nonatomic) UIEdgeInsets textInsets;
+
 @end

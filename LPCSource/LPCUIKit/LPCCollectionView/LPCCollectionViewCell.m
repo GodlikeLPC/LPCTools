@@ -18,8 +18,8 @@
 
 - (void)configUI
 {
-    [self setNeedsUpdateConstraints];
-    [self updateConstraintsIfNeeded];
+//    [self setNeedsUpdateConstraints];
+//    [self updateConstraintsIfNeeded];
 }
 
 - (void)updateData:(id)model{}

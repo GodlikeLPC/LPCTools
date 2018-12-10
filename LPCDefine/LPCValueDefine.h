@@ -33,5 +33,8 @@
 //根据天数获取毫秒数
 #define VALUE_Milliseconds(days)              (24.f * 60.f * 60.f * 1000.f * (days))
 
+//默认的日期格式化样式
+#define TIME_Format_yMd_Default               @"yyyy-MM-dd"
+#define TIME_Format_yMdHms_Default            @"yyyy-MM-dd HH:mm:ss"
 
 #endif /* LPCValueDefine_h */

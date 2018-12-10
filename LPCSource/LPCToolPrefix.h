@@ -10,5 +10,6 @@
 
 #import "LPCDefine.h"
 #import "LPCConfig.h"
+#import "LPCCategory.h"
 
 #endif /* LPCToolPrefix_h */

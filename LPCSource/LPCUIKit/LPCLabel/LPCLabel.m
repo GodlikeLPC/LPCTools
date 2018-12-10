@@ -9,12 +9,34 @@
 
 @implementation LPCLabel
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)init
+{
+    if (self = [super init]) {
+        _textInsets = UIEdgeInsetsZero;
+    }
+    return self;
 }
-*/
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    if (self = [super initWithFrame:frame]) {
+        _textInsets = UIEdgeInsetsZero;
+    }
+    return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        _textInsets = UIEdgeInsetsZero;
+    }
+    return self;
+}
+
+- (void)drawTextInRect:(CGRect)rect
+{
+    [super drawTextInRect:UIEdgeInsetsInsetRect(rect, _textInsets)];
+}
 
 @end

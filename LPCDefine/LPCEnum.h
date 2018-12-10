@@ -24,7 +24,7 @@ typedef NS_ENUM(NSInteger, SharePlatformType) {
 
 //分享的结果
 typedef NS_ENUM(NSInteger, ShareResultType) {
-    ShareResultType          = 0, //分享成功
+    ShareResultType_Success  = 0, //分享成功
     ShareResultType_Failure  = 1, //分享失败
     ShareResultType_Cancel   = 2, //分享取消
 };

@@ -34,4 +34,14 @@
                         startTime:(NSString *)startTime
                        expireTime:(NSString *)expireTime;
 
+/**
+ no是白天 yes是黑天
+ */
++ (BOOL)dayOrNight;
+
+/**
+ 计算日期和今天 相差天数
+ */
++ (NSUInteger)getDateDaysDiff:(NSDate *)date;
+
 @end

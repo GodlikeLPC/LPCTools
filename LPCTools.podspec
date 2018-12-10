@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.public_header_files = 'LPCSource/*.h','LPCSource/**/*.h','LPCSource/**/**/*.h'
   s.frameworks = 'UIKit', 'MapKit', 'CoreLocation'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', 'JSONModel'
   
   s.prefix_header_contents = '#import "LPCToolPrefix.h"'
 end
