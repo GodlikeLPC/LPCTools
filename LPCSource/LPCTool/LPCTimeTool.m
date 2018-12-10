@@ -128,10 +128,10 @@
     NSDate *localeDate = [adate dateByAddingTimeInterval:interval];
     
     double intervalTime = [fromDate timeIntervalSinceReferenceDate] - [localeDate timeIntervalSinceReferenceDate];
-    long lTime = abs((long)intervalTime);
+    long lTime = labs((long)intervalTime);
     
     NSInteger iDays = lTime/60/60/24;
-    NSInteger iHours = abs(lTime/3600)-iDays*24;
+    NSInteger iHours = labs(lTime/3600)-iDays*24;
     NSInteger iMinutes = (lTime / 60) % 60;
     
     NSArray *arrayReturn = @[@(iDays),@(iHours),@(iMinutes)];
