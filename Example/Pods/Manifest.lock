@@ -1,16 +1,41 @@
 PODS:
-  - LPCTools (0.3.2)
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - JSONModel (1.8.0)
+  - LPCTools (0.3.1):
+    - AFNetworking
+    - JSONModel
 
 DEPENDENCIES:
   - LPCTools (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - JSONModel
 
 EXTERNAL SOURCES:
   LPCTools:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LPCTools: c2d6aa4271ff514e3436122b1ca4718586dc4a41
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  LPCTools: fb807074d6407dd0db1398036627b701f6caff99
 
-PODFILE CHECKSUM: 6ac8588202e0bfbdda412829c53f08d4974239d6
+PODFILE CHECKSUM: 6aebc0cc920367244c94d8b08612fa3d0d7bf3eb
 
 COCOAPODS: 1.5.3

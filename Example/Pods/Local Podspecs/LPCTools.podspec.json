@@ -1,6 +1,6 @@
 {
   "name": "LPCTools",
-  "version": "0.3.2",
+  "version": "0.3.1",
   "summary": "a component of Tools on iOS",
   "description": "李沛池工具汇总、5年iOS架构经验总结出的一套用于快速搭建新启动App的框架、持续完善、普惠天下",
   "homepage": "https://github.com/GodlikeLPC/LPCTools",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/GodlikeLPC/LPCTools.git",
-    "tag": "0.3.2"
+    "tag": "0.3.1"
   },
   "platforms": {
     "ios": "9.0"
@@ -33,5 +33,13 @@
     "MapKit",
     "CoreLocation"
   ],
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "JSONModel": [
+
+    ]
+  },
   "prefix_header_contents": "#import \"LPCToolPrefix.h\""
 }

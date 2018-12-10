@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C8A6FB868C86EDA3698094A2CF508291"
+               BlueprintIdentifier = "662E63113197C3E79C10BC8BCA730D5B"
                BlueprintName = "LPCTools"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libLPCTools.a">

@@ -5,3 +5,6 @@ UserInterfaceState.xcuserstate
 project.xcworkspace/  
 xcuserdata/  
 UserInterface.xcuserstate
+
+#CocoaPods
+!Podfile.lock
