@@ -9,6 +9,30 @@
 
 @implementation NSDictionary (LPCTools)
 
++ (instancetype)dictionaryWithObjects:(const id [])objects forKeys:(const id <NSCopying> [])keys count:(NSUInteger)cnt
+{
+    NSMutableArray *values = [NSMutableArray array];
+    NSMutableArray *keyArr = [NSMutableArray array];
+    
+    for (int i = 0 ; i < cnt; i++) {
+        id value = objects[i];
+        id key = keys[i];
+        if (value && key) {
+            [values addObject:value];
+            [keyArr addObject:key];
+        }else {
+            if (key) {
+                NSLog(@"❌❌❌❌❌❌❌ Dictionary初始化'%@'对应的value为nil",key);
+            } else {
+                NSLog(@"❌❌❌❌❌❌❌ Dictionary初始化%@对应的key为nil",value);
+            }
+        }
+    }
+    
+    return [self dictionaryWithObjects:values forKeys:keyArr];
+}
+
+
 #ifdef DEBUG
 //解决xcode控制台输出日志不显示中文的问题
 - (NSString *)description
@@ -100,5 +124,25 @@
     return mustr;
 }
 #endif
+
+@end
+
+
+
+@implementation NSMutableDictionary (LPCTools)
+
++ (void)load
+{
+    MethodSwizzle_lpc(self, @selector(setObject:forKey:), @selector(MethodSwizzle_lpc:forKey:));
+}
+
+- (void)MethodSwizzle_lpc:(id)anObject forKey:(id)key
+{
+    if (anObject && key) {
+        [self MethodSwizzle_lpc:anObject forKey:key];
+    } else {
+        NSCAssert(0, @"❌❌❌❌❌❌❌ setObject:forKey: 参数有误");
+    }
+}
 
 @end

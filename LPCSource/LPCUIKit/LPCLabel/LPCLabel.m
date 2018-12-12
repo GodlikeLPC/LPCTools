@@ -39,4 +39,12 @@
     [super drawTextInRect:UIEdgeInsetsInsetRect(rect, _textInsets)];
 }
 
+- (void)setAttributedTextWithLineSpacing:(CGFloat)lineSpacing withString:(NSString *)string
+{
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [paragraphStyle setLineSpacing:lineSpacing];
+    [paragraphStyle setAlignment:self.textAlignment];
+    self.attributedText = [[NSAttributedString alloc]initWithString:string attributes:@{NSParagraphStyleAttributeName:paragraphStyle}];
+}
+
 @end

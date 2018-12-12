@@ -10,6 +10,30 @@
 
 @implementation NSString (LPCTools)
 
+//解析字符串
+- (NSString *)urlEncodeUsingEncoding:(NSStringEncoding)encoding
+{
+    NSString *charactersToEscape = @"!*'\"();:@&=+$,/?%#[]% ";
+    NSCharacterSet *allowedCharacters = [[NSCharacterSet characterSetWithCharactersInString:charactersToEscape] invertedSet];
+    NSString *UTF8encodedUrl = [self stringByAddingPercentEncodingWithAllowedCharacters:allowedCharacters];
+    return UTF8encodedUrl;
+}
+//UTF8解析字符串
+- (NSString *)urlEncodeWithEncodingUTF8
+{
+    return [self urlEncodeUsingEncoding:NSUTF8StringEncoding];
+}
+
+//是否存在字符串
+- (BOOL)containsString:(NSString *)str
+{
+    if ([self rangeOfString:str].length > 0)
+    {
+        return YES;
+    }
+    return NO;
+}
+
 //字符串去空格
 - (NSString *)stringDeleteSpace
 {

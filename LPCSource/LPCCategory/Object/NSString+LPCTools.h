@@ -13,6 +13,16 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSString (LPCTools)
 
 /**
+ UTF8解析字符串
+ */
+- (NSString *)urlEncodeWithEncodingUTF8;
+
+/**
+ 是否存在字符串
+ */
+- (BOOL)containsString:(NSString *)str;
+
+/**
  字符串去空格
  */
 - (NSString *)stringDeleteSpace;

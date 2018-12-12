@@ -29,6 +29,10 @@
 		2C2B217AFA6162F9478F73B7E1ABDD75 /* LPCLanguageDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C81F04ADA164A45E607091578A55C50 /* LPCLanguageDefine.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2CBA5742A8F4A8B904F9C30717BAB2ED /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CD80BAD3FCED77EF65039DEB00498296 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2E855D32B505091CA5643C5A59B24A33 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CF964763FEC12832FE9E794573B1C51 /* UIProgressView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3160977521C1094F009F8307 /* NSData+LPCTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 3160977121C10948009F8307 /* NSData+LPCTools.h */; };
+		3160977621C1094F009F8307 /* NSData+LPCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3160977221C10948009F8307 /* NSData+LPCTools.m */; };
+		3160977921C10C91009F8307 /* NSMutableSet+LPCTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 3160977721C10C91009F8307 /* NSMutableSet+LPCTools.h */; };
+		3160977A21C10C91009F8307 /* NSMutableSet+LPCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3160977821C10C91009F8307 /* NSMutableSet+LPCTools.m */; };
 		31F7A23421BE5BA200D837D8 /* LPCTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 31DD291B21BE520D002F6848 /* LPCTableViewCell.h */; };
 		31F7A23521BE5BA200D837D8 /* LPCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DD291C21BE520D002F6848 /* LPCTableViewCell.m */; };
 		31F7A23621BE5BA200D837D8 /* LPCTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 31DD291F21BE5255002F6848 /* LPCTableViewController.h */; };
@@ -217,6 +221,10 @@
 		2BC89AD1F5BB3CAA3A74AE0DF2A6B8E6 /* Pods-LPCTools_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LPCTools_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2D79892093E3A598C19359429E57F9F2 /* JSONAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONAPI.m; path = JSONModel/JSONModelNetworking/JSONAPI.m; sourceTree = "<group>"; };
 		2F682A1CB738D5B2D9264F33EBD1006C /* LPCPathDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LPCPathDefine.h; sourceTree = "<group>"; };
+		3160977121C10948009F8307 /* NSData+LPCTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+LPCTools.h"; sourceTree = "<group>"; };
+		3160977221C10948009F8307 /* NSData+LPCTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+LPCTools.m"; sourceTree = "<group>"; };
+		3160977721C10C91009F8307 /* NSMutableSet+LPCTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+LPCTools.h"; sourceTree = "<group>"; };
+		3160977821C10C91009F8307 /* NSMutableSet+LPCTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+LPCTools.m"; sourceTree = "<group>"; };
 		31DD291721BE51B7002F6848 /* LPCNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCNavigationController.h; sourceTree = "<group>"; };
 		31DD291821BE51B7002F6848 /* LPCNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPCNavigationController.m; sourceTree = "<group>"; };
 		31DD291B21BE520D002F6848 /* LPCTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPCTableViewCell.h; sourceTree = "<group>"; };
@@ -421,6 +429,10 @@
 				B0E6FBE9F563DE6C31250F31A656297F /* NSDictionary+LPCTools.m */,
 				9E2C16E26F9E71D9BE5606EA5A5AF818 /* NSString+LPCTools.h */,
 				28C21B1424A04909AC67F8C82D6B0969 /* NSString+LPCTools.m */,
+				3160977121C10948009F8307 /* NSData+LPCTools.h */,
+				3160977221C10948009F8307 /* NSData+LPCTools.m */,
+				3160977721C10C91009F8307 /* NSMutableSet+LPCTools.h */,
+				3160977821C10C91009F8307 /* NSMutableSet+LPCTools.m */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -913,12 +925,14 @@
 				D1E3733FAC935978C63FF36C83219EAE /* LPCObjectDefine.h in Headers */,
 				220D3CC016FAD3C9A05B7E98A19052CB /* LPCOtherDefine.h in Headers */,
 				B306C0A62D4B7D5B0F2062539C00F572 /* LPCPageControl.h in Headers */,
+				3160977521C1094F009F8307 /* NSData+LPCTools.h in Headers */,
 				B5F4E12121ACD155870581132BC0945A /* LPCPathDefine.h in Headers */,
 				C006089E5D8F617D0676883BBA8F4EC3 /* LPCScrollView.h in Headers */,
 				76EA0CCAA955594DE4DF52DAE1B3BA65 /* LPCStringDefine.h in Headers */,
 				800BFC5B24241BC9AAB37BCDC53A5A8B /* LPCSystemDefine.h in Headers */,
 				138BE7598CCA0AA536BC22F191387D31 /* LPCTableView.h in Headers */,
 				92DF8ADA4C17C3030F1E74B89A1A572F /* LPCThemeDefine.h in Headers */,
+				3160977921C10C91009F8307 /* NSMutableSet+LPCTools.h in Headers */,
 				7A0EBC46B4E77953D3EA9B0BF3D41BF7 /* LPCTimeTool.h in Headers */,
 				E825368CDAF8111A604EAA039A6896DF /* LPCTool.h in Headers */,
 				8B81335CFAB0F3AC63EAFAF63E5A2064 /* LPCToolPrefix.h in Headers */,
@@ -1171,6 +1185,8 @@
 				3DAC9290FDC8E1D84274C1F14F4E0F69 /* LPCTools-dummy.m in Sources */,
 				C9A61054DDFA6F380DA621B038078A16 /* LPCUITool.m in Sources */,
 				4D9D5F8AF8AE2F17F0A27900DF2FBD0D /* LPCView.m in Sources */,
+				3160977A21C10C91009F8307 /* NSMutableSet+LPCTools.m in Sources */,
+				3160977621C1094F009F8307 /* NSData+LPCTools.m in Sources */,
 				ABD60B4451F9E13B0DEEA7314832DA23 /* NSArray+LPCTools.m in Sources */,
 				E1691FB37CB312EC6BF491D0E8E4F22C /* NSDictionary+LPCTools.m in Sources */,
 				73B84D4F1252D0CF3968CD3D6C5E9032 /* NSString+LPCTools.m in Sources */,
