@@ -159,7 +159,7 @@
 {
     MethodSwizzle_lpc(self, @selector(addObject:), @selector(addObject_lpc:));
     MethodSwizzle_lpc(self, @selector(removeObjectAtIndex:), @selector(removeObjectAtIndex_lpc:));
-    MethodSwizzle_lpc(self, @selector(insertObject:atIndex:), @selector(insertObject_lpc:));
+    MethodSwizzle_lpc(self, @selector(insertObject:atIndex:), @selector(insertObject_lpc:atIndex:));
 }
 
 - (void)addObject_lpc:(id)object
