@@ -7,8 +7,8 @@
 
 #import "LPCPageControl.h"
 
-const float sizeDot = 5.f;
-const float magrin  = 5.f; // 圆点间距
+const float sizeDot_lpc = 5.f;
+const float magrin_lpc  = 5.f; // 圆点间距
 
 @implementation LPCPageControl
 
@@ -16,15 +16,15 @@ const float magrin  = 5.f; // 圆点间距
 {
     [super layoutSubviews];
     //计算圆点间距
-    CGFloat marginX = sizeDot + magrin;
+    CGFloat marginX = sizeDot_lpc + magrin_lpc;
     //计算整个pageControll的宽度
     CGFloat newW = (self.subviews.count - 1 ) * marginX;
     //设置新frame
-    self.frame = CGRectMake(WIDTH_Screen/2-(newW + sizeDot)/2, self.frame.origin.y, newW + sizeDot, self.frame.size.height);
+    self.frame = CGRectMake(WIDTH_Screen/2-(newW + sizeDot_lpc)/2, self.frame.origin.y, newW + sizeDot_lpc, self.frame.size.height);
     //遍历subview,设置圆点frame
     for (int i = 0; i < [self.subviews count]; i++) {
         UIImageView* dot = [self.subviews objectAtIndex:i];
-        [dot setFrame:CGRectMake(i * marginX, dot.frame.origin.y, sizeDot, sizeDot)];
+        [dot setFrame:CGRectMake(i * marginX, dot.frame.origin.y, sizeDot_lpc, sizeDot_lpc)];
     }
 }
 
@@ -34,8 +34,8 @@ const float magrin  = 5.f; // 圆点间距
     [super setCurrentPage:page];
     
     for (UIImageView* dotView in self.subviews) {
-        dotView.frame = CGRectMake(dotView.frame.origin.x, dotView.frame.origin.y, sizeDot, sizeDot);
-        dotView.layer.cornerRadius = sizeDot/2;
+        dotView.frame = CGRectMake(dotView.frame.origin.x, dotView.frame.origin.y, sizeDot_lpc, sizeDot_lpc);
+        dotView.layer.cornerRadius = sizeDot_lpc/2;
     }
 }
 
