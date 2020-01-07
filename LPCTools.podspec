@@ -5,10 +5,10 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LPCTools'
-  s.version          = '0.4.1'
+  s.version          = '0.4.2'
   s.summary          = 'a component of Tools on iOS'
   s.description      = <<-DESC
-  李沛池工具汇总、5年iOS架构经验总结出的一套用于快速搭建新启动App的框架、持续完善、普惠天下
+  李沛池工具汇总、6年iOS架构经验总结出的一套用于快速搭建新启动App的框架、持续完善、普惠天下
                        DESC
   s.homepage         = 'https://github.com/GodlikeLPC/LPCTools'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   # }
 
   s.public_header_files = 'LPCSource/*.h','LPCSource/**/*.h','LPCSource/**/**/*.h'
-  s.frameworks = 'UIKit', 'MapKit', 'CoreLocation'
+  s.frameworks = 'UIKit'
   s.dependency 'AFNetworking'
   s.dependency 'JSONModel'
   
